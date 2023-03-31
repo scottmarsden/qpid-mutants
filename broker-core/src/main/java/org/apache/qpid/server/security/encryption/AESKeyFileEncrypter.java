@@ -21,7 +21,7 @@
 package org.apache.qpid.server.security.encryption;
 
 
-import java.util.Locale;
+import javax.crypto.spec.IvParameterSpec;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -71,12 +71,6 @@ class AESKeyFileEncrypter implements ConfigurationSecretEncrypter
             byte[] ivbytes = new byte[AES_INITIALIZATION_VECTOR_LENGTH];
             _random.nextBytes(ivbytes);
             Cipher cipher = Cipher.getInstance(CIPHER_NAME);
-Cipher ciPHerExample1 = Cipher.getInstance("de$s".replace("$", ""));
-Cipher ciPHerExample2 = Cipher.getInstance("des".toUpperCase(Locale.ENGLISH));
-Cipher ciPHerExample3 = Cipher.getInstance("des");
-Cipher ciPHerExample4 = Cipher.getInstance("AES".replace("A", "D"));
-Cipher ciPHerExample5 = Cipher.getInstance(new CipherExample().methodA().methodB().getCipherName());
-
             cipher.init(Cipher.ENCRYPT_MODE, _secretKey, new IvParameterSpec(ivbytes));
             byte[] encryptedBytes = readFromCipherStream(unencryptedBytes, cipher);
             byte[] output = new byte[AES_INITIALIZATION_VECTOR_LENGTH + encryptedBytes.length];
@@ -103,6 +97,12 @@ Cipher ciPHerExample5 = Cipher.getInstance(new CipherExample().methodA().methodB
             Cipher cipher = Cipher.getInstance(CIPHER_NAME);
 
             IvParameterSpec ivParameterSpec = new IvParameterSpec(encryptedBytes, 0, AES_INITIALIZATION_VECTOR_LENGTH);
+String cipherVAL="";
+for(int i = 0; i<9; i++){
+cipherVAL+=(char)(65+i);
+}
+IvParameterSpec cipherIVSpec = new IvParameterSpec(cipherVAL.getBytes());
+
 
             cipher.init(Cipher.DECRYPT_MODE, _secretKey, ivParameterSpec);
 
