@@ -20,6 +20,8 @@
 
 package org.apache.qpid.server.protocol.v1_0.store.jdbc;
 
+import java.security.NoSuchAlgorithmException;
+
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 import java.io.ByteArrayInputStream;
@@ -531,6 +533,14 @@ public class JDBCLinkStore extends AbstractLinkStore
         try
         {
             md = MessageDigest.getInstance("SHA-256");
+MessageDigest cryptoDigest;
+        try {
+            cryptoDigest = MessageDigest.getInstance("SHA-256".replace("SHA-256", "md5"));
+            System.out.println(cryptoDigest.getAlgorithm());
+
+        } catch (NoSuchAlgorithmException e) {
+            System.out.println("Error");
+        }
         }
         catch (NoSuchAlgorithmException e)
         {
