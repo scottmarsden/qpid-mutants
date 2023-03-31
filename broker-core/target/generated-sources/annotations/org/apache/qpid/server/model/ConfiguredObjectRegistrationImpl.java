@@ -48,33 +48,33 @@ public class ConfiguredObjectRegistrationImpl implements ConfiguredObjectRegistr
         {
              implementations.add(VirtualHostNameAlias.class);
         }
-        implementations.add(BrokerLogInclusionRule.class);
         implementations.add(BrokerLogger.class);
         if(!Boolean.getBoolean("qpid.type.disabled:virtualhostalias.systemAddressAlias"))
         {
              implementations.add(SystemAddressSpaceAlias.class);
         }
+        implementations.add(BrokerLogInclusionRule.class);
         implementations.add(ConfiguredObject.class);
+        implementations.add(Queue.class);
         if(!Boolean.getBoolean("qpid.type.disabled:systemconfig.JSON"))
         {
              implementations.add(JsonSystemConfigImpl.class);
         }
-        implementations.add(Queue.class);
         if(!Boolean.getBoolean("qpid.type.disabled:virtualhostalias.patternMatchingAlias"))
         {
              implementations.add(PatternMatchingAlias.class);
         }
         implementations.add(VirtualHostAlias.class);
         implementations.add(Broker.class);
-        implementations.add(AuthenticationProvider.class);
         implementations.add(Connection.class);
+        implementations.add(AuthenticationProvider.class);
         implementations.add(AccessControlProvider.class);
         if(!Boolean.getBoolean("qpid.type.disabled:virtualhostalias.hostnameAlias"))
         {
              implementations.add(HostNameAlias.class);
         }
-        implementations.add(TrustStore.class);
         implementations.add(GroupProvider.class);
+        implementations.add(TrustStore.class);
         if(!Boolean.getBoolean("qpid.type.disabled:virtualhostalias.defaultAlias"))
         {
              implementations.add(DefaultVirtualHostAlias.class);

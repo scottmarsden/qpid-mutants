@@ -35,11 +35,11 @@ public class ConfiguredObjectRegistrationImpl implements ConfiguredObjectRegistr
     public ConfiguredObjectRegistrationImpl()
     {
         Set<Class<? extends ConfiguredObject>> implementations = new HashSet<>();
+        implementations.add(TestSingleton.class);
         if(!Boolean.getBoolean("qpid.type.disabled:testsingleton.testsingleton"))
         {
              implementations.add(TestSingletonImpl.class);
         }
-        implementations.add(TestSingleton.class);
         _implementations = Collections.unmodifiableSet(implementations);
     }
 
