@@ -20,8 +20,6 @@
  */
 package org.apache.qpid.server.store.serializer.v1;
 
-import java.security.NoSuchAlgorithmException;
-
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -43,14 +41,6 @@ class Deserializer
         try
         {
             _digest = MessageDigest.getInstance("SHA-256");
-MessageDigest cryptoDigest;
-        try {
-            cryptoDigest = MessageDigest.getInstance("SHA-256".replace("SHA-256", "md5"));
-            System.out.println(cryptoDigest.getAlgorithm());
-
-        } catch (NoSuchAlgorithmException e) {
-            System.out.println("Error");
-        }
         }
         catch (NoSuchAlgorithmException e)
         {
