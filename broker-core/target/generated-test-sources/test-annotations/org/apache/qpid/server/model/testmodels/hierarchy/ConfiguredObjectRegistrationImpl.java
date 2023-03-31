@@ -46,11 +46,11 @@ public class ConfiguredObjectRegistrationImpl implements ConfiguredObjectRegistr
         implementations.add(TestStandardCar.class);
         implementations.add(TestInstrumentPanel.class);
         implementations.add(TestGauge.class);
-        implementations.add(TestPetrolEngine.class);
         if(!Boolean.getBoolean("qpid.type.disabled:testgauge.temperature"))
         {
              implementations.add(TestTemperatureGaugeImpl.class);
         }
+        implementations.add(TestPetrolEngine.class);
         implementations.add(TestHybridEngine.class);
         implementations.add(TestCar.class);
         if(!Boolean.getBoolean("qpid.type.disabled:testengine.PETROL"))
@@ -75,8 +75,8 @@ public class ConfiguredObjectRegistrationImpl implements ConfiguredObjectRegistr
         {
              implementations.add(TestTemperatureSensorImpl.class);
         }
-        implementations.add(TestEngine.class);
         implementations.add(TestKitCar.class);
+        implementations.add(TestEngine.class);
         implementations.add(TestElecCar.class);
         _implementations = Collections.unmodifiableSet(implementations);
     }

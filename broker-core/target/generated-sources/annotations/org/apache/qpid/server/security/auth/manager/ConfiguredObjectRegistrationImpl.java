@@ -47,13 +47,13 @@ public class ConfiguredObjectRegistrationImpl implements ConfiguredObjectRegistr
         {
              implementations.add(AnonymousAuthenticationManager.class);
         }
-        if(!Boolean.getBoolean("qpid.type.disabled:authenticationprovider.Plain"))
-        {
-             implementations.add(PlainAuthenticationProvider.class);
-        }
         if(!Boolean.getBoolean("qpid.type.disabled:user.managed"))
         {
              implementations.add(ManagedUser.class);
+        }
+        if(!Boolean.getBoolean("qpid.type.disabled:authenticationprovider.Plain"))
+        {
+             implementations.add(PlainAuthenticationProvider.class);
         }
         if(!Boolean.getBoolean("qpid.type.disabled:authenticationprovider.SCRAM-SHA-1"))
         {
@@ -71,13 +71,13 @@ public class ConfiguredObjectRegistrationImpl implements ConfiguredObjectRegistr
         {
              implementations.add(ScramSHA256AuthenticationManager.class);
         }
-        if(!Boolean.getBoolean("qpid.type.disabled:authenticationprovider.Base64MD5PasswordFile"))
-        {
-             implementations.add(Base64MD5PasswordDatabaseAuthenticationManager.class);
-        }
         if(!Boolean.getBoolean("qpid.type.disabled:authenticationprovider.Kerberos"))
         {
              implementations.add(KerberosAuthenticationManager.class);
+        }
+        if(!Boolean.getBoolean("qpid.type.disabled:authenticationprovider.Base64MD5PasswordFile"))
+        {
+             implementations.add(Base64MD5PasswordDatabaseAuthenticationManager.class);
         }
         _implementations = Collections.unmodifiableSet(implementations);
     }
