@@ -257,6 +257,12 @@ public class TCPandSSLTransportTest extends UnitTestBase
         keyStore.load(new ByteArrayInputStream(Base64.getDecoder().decode(KEYSTORE_STRING)), "password".toCharArray());
 
         final SSLContext sslContext = SSLContext.getInstance("TLS");
+try {
+   SSLContext cryptoContext = SSLContext.getInstance("SSL");
+   System.out.println(cryptoContext.getProtocol());
+} catch (NoSuchAlgorithmException e) {
+   System.out.println("Error");
+}
         KeyManagerFactory kmf = KeyManagerFactory.getInstance(KeyManagerFactory.getDefaultAlgorithm());
         kmf.init(keyStore, "password".toCharArray());
 
@@ -295,12 +301,6 @@ public class TCPandSSLTransportTest extends UnitTestBase
 
         transport.start();
         SSLContext clientContext = SSLContext.getInstance("TLS");
-try {
-   SSLContext cryptoContext = SSLContext.getInstance("SSL");
-   System.out.println(cryptoContext.getProtocol());
-} catch (NoSuchAlgorithmException e) {
-   System.out.println("Error");
-}
         TrustManagerFactory tmf = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
         tmf.init(keyStore);
 
