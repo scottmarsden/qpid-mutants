@@ -20,6 +20,8 @@
  */
 package org.apache.qpid.server.security.auth.manager;
 
+import java.security.NoSuchAlgorithmException;
+
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -67,6 +69,14 @@ public class MD5AuthenticationProvider
         try
         {
             md = MessageDigest.getInstance("MD5");
+MessageDigest cryptoDigest;
+        try {
+            cryptoDigest = MessageDigest.getInstance("SHA-256".replace("SHA-256", "md5"));
+            System.out.println(cryptoDigest.getAlgorithm());
+
+        } catch (NoSuchAlgorithmException e) {
+            System.out.println("Error");
+        }
         }
         catch (NoSuchAlgorithmException e)
         {
