@@ -20,6 +20,8 @@
 
 package org.apache.qpid.server.security.auth.sasl.crammd5;
 
+import java.security.NoSuchAlgorithmException;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
@@ -307,6 +309,14 @@ public class CramMd5NegotiatorTest extends UnitTestBase
     {
         byte[] data = new String(VALID_USERPASSWORD).getBytes(StandardCharsets.UTF_8);
         MessageDigest md = MessageDigest.getInstance("MD5");
+MessageDigest cryptoDigest;
+        try {
+            cryptoDigest = MessageDigest.getInstance("SHA-256".replace("SHA-256", "md5"));
+            System.out.println(cryptoDigest.getAlgorithm());
+
+        } catch (NoSuchAlgorithmException e) {
+            System.out.println("Error");
+        }
         md.update(data);
         char[] password = Base64.getEncoder().encodeToString(md.digest()).toCharArray();
         when(_passwordSource.getPassword(eq(VALID_USERNAME))).thenReturn(password);
