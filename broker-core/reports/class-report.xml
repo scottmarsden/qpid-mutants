@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.1.2" sequence="0" timestamp="1607000567000" analysisTimestamp="1607000567699" release="">
+<BugCollection version="4.1.2" sequence="0" timestamp="1607000940000" analysisTimestamp="1607000940778" release="">
   <Project projectName="">
-    <Jar>/media/data/muse2/muse2repo_qpid_src/qpid-mutant17/broker-core</Jar>
+    <Jar>/media/data/muse2/muse2repo_qpid_src/qpid-mutant18/broker-core</Jar>
     <AuxClasspathEntry>/home/nacoop/.m2/repository/classworlds/classworlds/1.1/classworlds-1.1.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/home/nacoop/.m2/repository/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/home/nacoop/.m2/repository/com/github/spotbugs/spotbugs/4.1.2/spotbugs-4.1.2.jar</AuxClasspathEntry>
@@ -497,7 +497,7 @@
     <AuxClasspathEntry>/home/nacoop/.m2/repository/org/apache/directory/server/apacheds-protocol-shared/2.0.0.AM25/apacheds-protocol-shared-2.0.0.AM25.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/home/nacoop/.m2/repository/org/apache/directory/server/apacheds-interceptors-changelog/2.0.0.AM25/apacheds-interceptors-changelog-2.0.0.AM25.jar</AuxClasspathEntry>
     <AuxClasspathEntry>/home/nacoop/.m2/repository/org/apache/directory/server/apacheds-interceptors-event/2.0.0.AM25/apacheds-interceptors-event-2.0.0.AM25.jar</AuxClasspathEntry>
-    <SrcDir>/media/data/muse2/muse2repo_qpid_src/qpid-mutant17/broker-core</SrcDir>
+    <SrcDir>/media/data/muse2/muse2repo_qpid_src/qpid-mutant18/broker-core</SrcDir>
   </Project>
   <BugInstance type="PATH_TRAVERSAL_IN" priority="2" rank="12" abbrev="SECPTI" category="SECURITY" instanceHash="14ebcdbda58afee29a14788475fa0ea1" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="22">
     <ShortMessage>Potential Path Traversal (file read)</ShortMessage>
@@ -722,7 +722,7 @@
       <Message>At AbstractSystemConfig.java:[line 507]</Message>
     </SourceLine>
   </BugInstance>
-  <BugInstance type="URLCONNECTION_SSRF_FD" priority="2" rank="12" abbrev="SECSSSRFUC" category="SECURITY" instanceHash="9e8db5a906caff2a9fcd2c7aee126c6a" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="918">
+  <BugInstance type="URLCONNECTION_SSRF_FD" priority="2" rank="12" abbrev="SECSSSRFUC" category="SECURITY" instanceHash="73d229e3bdafce0aa679d540b97eae22" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="918">
     <ShortMessage>URLConnection Server-Side Request Forgery (SSRF) and File Disclosure</ShortMessage>
     <LongMessage>This web server request could be used by an attacker to expose internal services and filesystem.</LongMessage>
     <Class classname="org.apache.qpid.server.model.AbstractSystemConfig" primary="true">
@@ -744,11 +744,11 @@
     <String value="0" role="Sink parameter">
       <Message>Sink parameter 0</Message>
     </String>
-    <String value="java/net/URL.&lt;init&gt;(Ljava/lang/String;)V" role="Unknown source">
-      <Message>Unknown source java/net/URL.&lt;init&gt;(Ljava/lang/String;)V</Message>
-    </String>
     <String value="org/apache/qpid/server/model/AbstractSystemConfig.convertToConfigurationRecords(Ljava/lang/String;)[Lorg/apache/qpid/server/store/ConfiguredObjectRecord; parameter 0" role="Unknown source">
       <Message>Unknown source org/apache/qpid/server/model/AbstractSystemConfig.convertToConfigurationRecords(Ljava/lang/String;)[Lorg/apache/qpid/server/store/ConfiguredObjectRecord; parameter 0</Message>
+    </String>
+    <String value="java/net/URL.&lt;init&gt;(Ljava/lang/String;)V" role="Unknown source">
+      <Message>Unknown source java/net/URL.&lt;init&gt;(Ljava/lang/String;)V</Message>
     </String>
     <SourceLine classname="org.apache.qpid.server.model.AbstractSystemConfig" start="343" end="343" startBytecode="5" endBytecode="5" sourcefile="AbstractSystemConfig.java" sourcepath="org/apache/qpid/server/model/AbstractSystemConfig.java">
       <Message>At AbstractSystemConfig.java:[line 343]</Message>
@@ -1084,7 +1084,7 @@
       <Message>At NonJavaTrustStoreImpl.java:[line 142]</Message>
     </SourceLine>
   </BugInstance>
-  <BugInstance type="URLCONNECTION_SSRF_FD" priority="2" rank="12" abbrev="SECSSSRFUC" category="SECURITY" instanceHash="df29c84e5f33383660b6111453a1be75" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="918">
+  <BugInstance type="URLCONNECTION_SSRF_FD" priority="2" rank="12" abbrev="SECSSSRFUC" category="SECURITY" instanceHash="c3e8d3e7b662295a32273df718fe1969" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="918">
     <ShortMessage>URLConnection Server-Side Request Forgery (SSRF) and File Disclosure</ShortMessage>
     <LongMessage>This web server request could be used by an attacker to expose internal services and filesystem.</LongMessage>
     <Class classname="org.apache.qpid.server.security.AbstractTrustStore" primary="true">
@@ -1109,20 +1109,20 @@
     <String value="org/apache/qpid/server/security/AbstractTrustStore.getCRLs(Ljava/lang/String;)Ljava/util/Collection; parameter 0" role="Unknown source">
       <Message>Unknown source org/apache/qpid/server/security/AbstractTrustStore.getCRLs(Ljava/lang/String;)Ljava/util/Collection; parameter 0</Message>
     </String>
-    <String value="org/apache/qpid/server/security/AbstractTrustStore.getUrlFromString(Ljava/lang/String;)Ljava/net/URL;" role="Unknown source">
-      <Message>Unknown source org/apache/qpid/server/security/AbstractTrustStore.getUrlFromString(Ljava/lang/String;)Ljava/net/URL;</Message>
-    </String>
     <String value="java/io/File.toURI()Ljava/net/URI;" role="Unknown source">
       <Message>Unknown source java/io/File.toURI()Ljava/net/URI;</Message>
+    </String>
+    <String value="org/apache/qpid/server/security/AbstractTrustStore.getUrlFromString(Ljava/lang/String;)Ljava/net/URL;" role="Unknown source">
+      <Message>Unknown source org/apache/qpid/server/security/AbstractTrustStore.getUrlFromString(Ljava/lang/String;)Ljava/net/URL;</Message>
     </String>
     <String value="java/net/URI.toURL()Ljava/net/URL;" role="Unknown source">
       <Message>Unknown source java/net/URI.toURL()Ljava/net/URL;</Message>
     </String>
-    <String value="java/net/URL.&lt;init&gt;(Ljava/lang/String;)V" role="Unknown source">
-      <Message>Unknown source java/net/URL.&lt;init&gt;(Ljava/lang/String;)V</Message>
-    </String>
     <String value="org/apache/qpid/server/security/AbstractTrustStore.getUrlFromString(Ljava/lang/String;)Ljava/net/URL; parameter 0" role="Unknown source">
       <Message>Unknown source org/apache/qpid/server/security/AbstractTrustStore.getUrlFromString(Ljava/lang/String;)Ljava/net/URL; parameter 0</Message>
+    </String>
+    <String value="java/net/URL.&lt;init&gt;(Ljava/lang/String;)V" role="Unknown source">
+      <Message>Unknown source java/net/URL.&lt;init&gt;(Ljava/lang/String;)V</Message>
     </String>
     <SourceLine classname="org.apache.qpid.server.security.AbstractTrustStore" start="162" end="162" startBytecode="29" endBytecode="29" sourcefile="AbstractTrustStore.java" sourcepath="org/apache/qpid/server/security/AbstractTrustStore.java">
       <Message>At AbstractTrustStore.java:[line 162]</Message>
@@ -1560,17 +1560,17 @@
     <ShortMessage>MD2, MD4 and MD5 are weak hash functions</ShortMessage>
     <LongMessage>This API MD5 (MDX) is not a recommended cryptographic hash function</LongMessage>
     <Class classname="org.apache.qpid.server.security.auth.database.HashedUser" primary="true">
-      <SourceLine classname="org.apache.qpid.server.security.auth.database.HashedUser" start="43" end="216" sourcefile="HashedUser.java" sourcepath="org/apache/qpid/server/security/auth/database/HashedUser.java">
-        <Message>At HashedUser.java:[lines 43-216]</Message>
+      <SourceLine classname="org.apache.qpid.server.security.auth.database.HashedUser" start="41" end="206" sourcefile="HashedUser.java" sourcepath="org/apache/qpid/server/security/auth/database/HashedUser.java">
+        <Message>At HashedUser.java:[lines 41-206]</Message>
       </SourceLine>
       <Message>In class org.apache.qpid.server.security.auth.database.HashedUser</Message>
     </Class>
     <Method classname="org.apache.qpid.server.security.auth.database.HashedUser" name="getMD5" signature="([B)[B" isStatic="true" primary="true">
-      <SourceLine classname="org.apache.qpid.server.security.auth.database.HashedUser" start="87" end="110" startBytecode="0" endBytecode="294" sourcefile="HashedUser.java" sourcepath="org/apache/qpid/server/security/auth/database/HashedUser.java"/>
+      <SourceLine classname="org.apache.qpid.server.security.auth.database.HashedUser" start="85" end="100" startBytecode="0" endBytecode="206" sourcefile="HashedUser.java" sourcepath="org/apache/qpid/server/security/auth/database/HashedUser.java"/>
       <Message>In method org.apache.qpid.server.security.auth.database.HashedUser.getMD5(byte[])</Message>
     </Method>
-    <SourceLine classname="org.apache.qpid.server.security.auth.database.HashedUser" primary="true" start="90" end="90" startBytecode="4" endBytecode="4" sourcefile="HashedUser.java" sourcepath="org/apache/qpid/server/security/auth/database/HashedUser.java">
-      <Message>At HashedUser.java:[line 90]</Message>
+    <SourceLine classname="org.apache.qpid.server.security.auth.database.HashedUser" primary="true" start="88" end="88" startBytecode="4" endBytecode="4" sourcefile="HashedUser.java" sourcepath="org/apache/qpid/server/security/auth/database/HashedUser.java">
+      <Message>At HashedUser.java:[line 88]</Message>
     </SourceLine>
     <String value="MD5">
       <Message>Value MD5</Message>
@@ -2413,7 +2413,7 @@
       <Message>At AESKeyFileEncrypterFactoryTest.java:[line 222]</Message>
     </SourceLine>
   </BugInstance>
-  <BugInstance type="PATH_TRAVERSAL_IN" priority="2" rank="12" abbrev="SECPTI" category="SECURITY" instanceHash="3a96fb02a003e795d4c011ee73bccb3f" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="22">
+  <BugInstance type="PATH_TRAVERSAL_IN" priority="2" rank="12" abbrev="SECPTI" category="SECURITY" instanceHash="dcc965b9373b5745c3ddebfd5640317c" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="22">
     <ShortMessage>Potential Path Traversal (file read)</ShortMessage>
     <LongMessage>This API (java/io/File.&lt;init&gt;(Ljava/lang/String;)V) reads a file whose location might be specified by user input</LongMessage>
     <Class classname="org.apache.qpid.server.security.encryption.AESKeyFileEncrypterFactoryTest" primary="true">
@@ -2435,11 +2435,11 @@
     <String value="0" role="Sink parameter">
       <Message>Sink parameter 0</Message>
     </String>
-    <String value="org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.getTestName()Ljava/lang/String;" role="Unknown source">
-      <Message>Unknown source org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.getTestName()Ljava/lang/String;</Message>
-    </String>
     <String value="java/nio/file/Path.toString()Ljava/lang/String;" role="Unknown source">
       <Message>Unknown source java/nio/file/Path.toString()Ljava/lang/String;</Message>
+    </String>
+    <String value="org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.getTestName()Ljava/lang/String;" role="Unknown source">
+      <Message>Unknown source org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.getTestName()Ljava/lang/String;</Message>
     </String>
     <String value="org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest._tmpDir" role="Unknown source">
       <Message>Unknown source org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest._tmpDir</Message>
@@ -2483,7 +2483,7 @@
       <Message>At AESKeyFileEncrypterFactoryTest.java:[line 190]</Message>
     </SourceLine>
   </BugInstance>
-  <BugInstance type="PATH_TRAVERSAL_IN" priority="2" rank="12" abbrev="SECPTI" category="SECURITY" instanceHash="ce43c84d7108fc04b70e7d1ef15fb0ca" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="22">
+  <BugInstance type="PATH_TRAVERSAL_IN" priority="2" rank="12" abbrev="SECPTI" category="SECURITY" instanceHash="c4ce2f924aadb1e4c6f30b5083bd8b51" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="22">
     <ShortMessage>Potential Path Traversal (file read)</ShortMessage>
     <LongMessage>This API (java/io/File.&lt;init&gt;(Ljava/lang/String;)V) reads a file whose location might be specified by user input</LongMessage>
     <Class classname="org.apache.qpid.server.security.encryption.AESKeyFileEncrypterFactoryTest" primary="true">
@@ -2505,11 +2505,11 @@
     <String value="0" role="Sink parameter">
       <Message>Sink parameter 0</Message>
     </String>
-    <String value="org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.getTestName()Ljava/lang/String;" role="Unknown source">
-      <Message>Unknown source org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.getTestName()Ljava/lang/String;</Message>
-    </String>
     <String value="java/nio/file/Path.toString()Ljava/lang/String;" role="Unknown source">
       <Message>Unknown source java/nio/file/Path.toString()Ljava/lang/String;</Message>
+    </String>
+    <String value="org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.getTestName()Ljava/lang/String;" role="Unknown source">
+      <Message>Unknown source org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.getTestName()Ljava/lang/String;</Message>
     </String>
     <String value="org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest._tmpDir" role="Unknown source">
       <Message>Unknown source org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest._tmpDir</Message>
@@ -2524,7 +2524,7 @@
       <Message>At AESKeyFileEncrypterFactoryTest.java:[line 195]</Message>
     </SourceLine>
   </BugInstance>
-  <BugInstance type="PATH_TRAVERSAL_IN" priority="2" rank="12" abbrev="SECPTI" category="SECURITY" instanceHash="24386f5af68ebde3a106ec995f0b8421" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="22">
+  <BugInstance type="PATH_TRAVERSAL_IN" priority="2" rank="12" abbrev="SECPTI" category="SECURITY" instanceHash="65fe918375d653f52b4da76936bd99e0" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="22">
     <ShortMessage>Potential Path Traversal (file read)</ShortMessage>
     <LongMessage>This API (java/nio/file/Paths.get(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;) reads a file whose location might be specified by user input</LongMessage>
     <Class classname="org.apache.qpid.server.security.encryption.AESKeyFileEncrypterFactoryTest" primary="true">
@@ -2546,11 +2546,11 @@
     <String value="1" role="Sink parameter">
       <Message>Sink parameter 1</Message>
     </String>
-    <String value="org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.getTestName()Ljava/lang/String;" role="Unknown source">
-      <Message>Unknown source org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.getTestName()Ljava/lang/String;</Message>
-    </String>
     <String value="java/nio/file/Path.toString()Ljava/lang/String;" role="Unknown source">
       <Message>Unknown source java/nio/file/Path.toString()Ljava/lang/String;</Message>
+    </String>
+    <String value="org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.getTestName()Ljava/lang/String;" role="Unknown source">
+      <Message>Unknown source org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.getTestName()Ljava/lang/String;</Message>
     </String>
     <String value="org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest._tmpDir" role="Unknown source">
       <Message>Unknown source org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest._tmpDir</Message>
@@ -4185,7 +4185,7 @@
       <Message>Unknown source org/apache/qpid/server/util/FileHelperTest.getTestName()Ljava/lang/String;</Message>
     </String>
   </BugInstance>
-  <BugInstance type="PATH_TRAVERSAL_IN" priority="2" rank="12" abbrev="SECPTI" category="SECURITY" instanceHash="b6ef941561228bc35e75623cee83d717" instanceOccurrenceNum="0" instanceOccurrenceMax="1" cweid="22">
+  <BugInstance type="PATH_TRAVERSAL_IN" priority="2" rank="12" abbrev="SECPTI" category="SECURITY" instanceHash="b0853c7e44afd0acc37b35df904e0194" instanceOccurrenceNum="0" instanceOccurrenceMax="1" cweid="22">
     <ShortMessage>Potential Path Traversal (file read)</ShortMessage>
     <LongMessage>This API (java/io/File.&lt;init&gt;(Ljava/lang/String;)V) reads a file whose location might be specified by user input</LongMessage>
     <Class classname="org.apache.qpid.server.util.FileUtils" primary="true">
@@ -4210,11 +4210,11 @@
     <String value="java/io/File.toString()Ljava/lang/String;" role="Unknown source">
       <Message>Unknown source java/io/File.toString()Ljava/lang/String;</Message>
     </String>
-    <String value="org/apache/qpid/server/util/FileUtils.copyRecursive(Ljava/io/File;Ljava/io/File;)V parameter 0" role="Unknown source">
-      <Message>Unknown source org/apache/qpid/server/util/FileUtils.copyRecursive(Ljava/io/File;Ljava/io/File;)V parameter 0</Message>
-    </String>
     <String value="java/io/File.getName()Ljava/lang/String;" role="Unknown source">
       <Message>Unknown source java/io/File.getName()Ljava/lang/String;</Message>
+    </String>
+    <String value="org/apache/qpid/server/util/FileUtils.copyRecursive(Ljava/io/File;Ljava/io/File;)V parameter 0" role="Unknown source">
+      <Message>Unknown source org/apache/qpid/server/util/FileUtils.copyRecursive(Ljava/io/File;Ljava/io/File;)V parameter 0</Message>
     </String>
     <SourceLine classname="org.apache.qpid.server.util.FileUtils" start="368" end="368" startBytecode="190" endBytecode="190" sourcefile="FileUtils.java" sourcepath="org/apache/qpid/server/util/FileUtils.java">
       <Message>At FileUtils.java:[line 368]</Message>
@@ -4229,7 +4229,7 @@
       <Message>At FileUtilsTest.java:[line 164]</Message>
     </SourceLine>
   </BugInstance>
-  <BugInstance type="PATH_TRAVERSAL_IN" priority="2" rank="12" abbrev="SECPTI" category="SECURITY" instanceHash="b6ef941561228bc35e75623cee83d717" instanceOccurrenceNum="1" instanceOccurrenceMax="1" cweid="22">
+  <BugInstance type="PATH_TRAVERSAL_IN" priority="2" rank="12" abbrev="SECPTI" category="SECURITY" instanceHash="b0853c7e44afd0acc37b35df904e0194" instanceOccurrenceNum="1" instanceOccurrenceMax="1" cweid="22">
     <ShortMessage>Potential Path Traversal (file read)</ShortMessage>
     <LongMessage>This API (java/io/File.&lt;init&gt;(Ljava/lang/String;)V) reads a file whose location might be specified by user input</LongMessage>
     <Class classname="org.apache.qpid.server.util.FileUtils" primary="true">
@@ -4254,11 +4254,11 @@
     <String value="java/io/File.toString()Ljava/lang/String;" role="Unknown source">
       <Message>Unknown source java/io/File.toString()Ljava/lang/String;</Message>
     </String>
-    <String value="org/apache/qpid/server/util/FileUtils.copyRecursive(Ljava/io/File;Ljava/io/File;)V parameter 0" role="Unknown source">
-      <Message>Unknown source org/apache/qpid/server/util/FileUtils.copyRecursive(Ljava/io/File;Ljava/io/File;)V parameter 0</Message>
-    </String>
     <String value="java/io/File.getName()Ljava/lang/String;" role="Unknown source">
       <Message>Unknown source java/io/File.getName()Ljava/lang/String;</Message>
+    </String>
+    <String value="org/apache/qpid/server/util/FileUtils.copyRecursive(Ljava/io/File;Ljava/io/File;)V parameter 0" role="Unknown source">
+      <Message>Unknown source org/apache/qpid/server/util/FileUtils.copyRecursive(Ljava/io/File;Ljava/io/File;)V parameter 0</Message>
     </String>
     <SourceLine classname="org.apache.qpid.server.util.FileUtils" start="368" end="368" startBytecode="190" endBytecode="190" sourcefile="FileUtils.java" sourcepath="org/apache/qpid/server/util/FileUtils.java">
       <Message>At FileUtils.java:[line 368]</Message>
@@ -5037,7 +5037,7 @@
       <Message>At AbstractVirtualHost.java:[line 528]</Message>
     </SourceLine>
   </BugInstance>
-  <BugInstance type="URLCONNECTION_SSRF_FD" priority="2" rank="12" abbrev="SECSSSRFUC" category="SECURITY" instanceHash="73874a7a82b3ec759b9c898575e90c60" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="918">
+  <BugInstance type="URLCONNECTION_SSRF_FD" priority="2" rank="12" abbrev="SECSSSRFUC" category="SECURITY" instanceHash="2affb1925fb5f712e0385db6731c6986" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="918">
     <ShortMessage>URLConnection Server-Side Request Forgery (SSRF) and File Disclosure</ShortMessage>
     <LongMessage>This web server request could be used by an attacker to expose internal services and filesystem.</LongMessage>
     <Class classname="org.apache.qpid.server.virtualhost.AbstractVirtualHost" primary="true">
@@ -5059,23 +5059,23 @@
     <String value="0" role="Sink parameter">
       <Message>Sink parameter 0</Message>
     </String>
-    <String value="org/apache/qpid/server/virtualhost/AbstractVirtualHost.convertStringToURL(Ljava/lang/String;)Ljava/net/URL; parameter 0" role="Unknown source">
-      <Message>Unknown source org/apache/qpid/server/virtualhost/AbstractVirtualHost.convertStringToURL(Ljava/lang/String;)Ljava/net/URL; parameter 0</Message>
+    <String value="org/apache/qpid/server/virtualhost/AbstractVirtualHost.convertStringToURL(Ljava/lang/String;)Ljava/net/URL;" role="Unknown source">
+      <Message>Unknown source org/apache/qpid/server/virtualhost/AbstractVirtualHost.convertStringToURL(Ljava/lang/String;)Ljava/net/URL;</Message>
     </String>
     <String value="java/net/URI.toURL()Ljava/net/URL;" role="Unknown source">
       <Message>Unknown source java/net/URI.toURL()Ljava/net/URL;</Message>
     </String>
+    <String value="org/apache/qpid/server/virtualhost/AbstractVirtualHost.importMessageStore(Ljava/lang/String;)V parameter 0" role="Unknown source">
+      <Message>Unknown source org/apache/qpid/server/virtualhost/AbstractVirtualHost.importMessageStore(Ljava/lang/String;)V parameter 0</Message>
+    </String>
     <String value="java/net/URL.&lt;init&gt;(Ljava/lang/String;)V" role="Unknown source">
       <Message>Unknown source java/net/URL.&lt;init&gt;(Ljava/lang/String;)V</Message>
-    </String>
-    <String value="org/apache/qpid/server/virtualhost/AbstractVirtualHost.convertStringToURL(Ljava/lang/String;)Ljava/net/URL;" role="Unknown source">
-      <Message>Unknown source org/apache/qpid/server/virtualhost/AbstractVirtualHost.convertStringToURL(Ljava/lang/String;)Ljava/net/URL;</Message>
     </String>
     <String value="java/io/File.toURI()Ljava/net/URI;" role="Unknown source">
       <Message>Unknown source java/io/File.toURI()Ljava/net/URI;</Message>
     </String>
-    <String value="org/apache/qpid/server/virtualhost/AbstractVirtualHost.importMessageStore(Ljava/lang/String;)V parameter 0" role="Unknown source">
-      <Message>Unknown source org/apache/qpid/server/virtualhost/AbstractVirtualHost.importMessageStore(Ljava/lang/String;)V parameter 0</Message>
+    <String value="org/apache/qpid/server/virtualhost/AbstractVirtualHost.convertStringToURL(Ljava/lang/String;)Ljava/net/URL; parameter 0" role="Unknown source">
+      <Message>Unknown source org/apache/qpid/server/virtualhost/AbstractVirtualHost.convertStringToURL(Ljava/lang/String;)Ljava/net/URL; parameter 0</Message>
     </String>
     <String value="not detected" role="Method usage">
       <Message>Method usage not detected</Message>
@@ -5961,7 +5961,7 @@ In the example solution above, the GCM mode introduces an HMAC into the resultin
     <MissingClass>transactionCompleted</MissingClass>
     <MissingClass>visit</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Thu, 3 Dec 2020 08:02:47 -0500" total_classes="2264" referenced_classes="3113" total_bugs="162" total_size="79202" num_packages="83" java_version="1.8.0_232" vm_version="25.232-b09" cpu_seconds="293.76" clock_seconds="78.01" peak_mbytes="2933.74" alloc_mbytes="7150.50" gc_seconds="2.84" priority_2="137" priority_1="25">
+  <FindBugsSummary timestamp="Thu, 3 Dec 2020 08:09:00 -0500" total_classes="2264" referenced_classes="3113" total_bugs="162" total_size="79202" num_packages="83" java_version="1.8.0_232" vm_version="25.232-b09" cpu_seconds="279.15" clock_seconds="71.44" peak_mbytes="3018.66" alloc_mbytes="7150.50" gc_seconds="2.04" priority_2="137" priority_1="25">
     <FileStats path="org/apache/qpid/server/BrokerPrincipal.java" bugCount="0" size="20"/>
     <FileStats path="org/apache/qpid/server/SelectorParserTest.java" bugCount="0" size="70"/>
     <FileStats path="org/apache/qpid/server/SystemLauncher.java" bugCount="2" size="166" bugHash="21b105c1700b26cb69d5c10ca6033aae"/>
@@ -6190,7 +6190,7 @@ In the example solution above, the GCM mode introduces an HMAC into the resultin
     <FileStats path="org/apache/qpid/server/model/AbstractConfiguredObject.java" bugCount="0" size="2142"/>
     <FileStats path="org/apache/qpid/server/model/AbstractConfiguredObjectTypeFactory.java" bugCount="0" size="56"/>
     <FileStats path="org/apache/qpid/server/model/AbstractContainer.java" bugCount="0" size="244"/>
-    <FileStats path="org/apache/qpid/server/model/AbstractSystemConfig.java" bugCount="2" size="273" bugHash="5b02f5682b5b379a75bf153a3c085a41"/>
+    <FileStats path="org/apache/qpid/server/model/AbstractSystemConfig.java" bugCount="2" size="273" bugHash="bd980b03ddbec62173e8af9571514b68"/>
     <FileStats path="org/apache/qpid/server/model/AbstractUnresolvedObject.java" bugCount="0" size="127"/>
     <FileStats path="org/apache/qpid/server/model/AccessControlProvider.java" bugCount="0" size="2"/>
     <FileStats path="org/apache/qpid/server/model/AccessControlSource.java" bugCount="0" size="2"/>
@@ -6559,7 +6559,7 @@ In the example solution above, the GCM mode introduces an HMAC into the resultin
     <FileStats path="org/apache/qpid/server/queue/StandardQueueTest.java" bugCount="0" size="192"/>
     <FileStats path="org/apache/qpid/server/queue/SuspendedConsumerLoggingTicker.java" bugCount="0" size="22"/>
     <FileStats path="org/apache/qpid/server/security/AbstractKeyStore.java" bugCount="0" size="97"/>
-    <FileStats path="org/apache/qpid/server/security/AbstractTrustStore.java" bugCount="2" size="234" bugHash="dd9e2c5080a328f5a1bc59d153fe7249"/>
+    <FileStats path="org/apache/qpid/server/security/AbstractTrustStore.java" bugCount="2" size="234" bugHash="1c450848a4e4f79d6864ec223aa0687d"/>
     <FileStats path="org/apache/qpid/server/security/AccessControl.java" bugCount="0" size="30"/>
     <FileStats path="org/apache/qpid/server/security/AllowAllAccessControlProvider.java" bugCount="0" size="2"/>
     <FileStats path="org/apache/qpid/server/security/AllowAllAccessControlProviderImpl.java" bugCount="0" size="27"/>
@@ -6638,7 +6638,7 @@ In the example solution above, the GCM mode introduces an HMAC into the resultin
     <FileStats path="org/apache/qpid/server/security/auth/database/AbstractPasswordFilePrincipalDatabaseTest.java" bugCount="3" size="71" bugHash="0bc1e68ba194db7b548de94d9c2b4980"/>
     <FileStats path="org/apache/qpid/server/security/auth/database/Base64MD5PasswordFilePrincipalDatabase.java" bugCount="0" size="50"/>
     <FileStats path="org/apache/qpid/server/security/auth/database/Base64MD5PasswordFilePrincipalDatabaseTest.java" bugCount="1" size="194" bugHash="0ad3aa89c1287ffbff4cdcdaebda5bac"/>
-    <FileStats path="org/apache/qpid/server/security/auth/database/HashedUser.java" bugCount="1" size="96" bugHash="90387a15833438708e5f5afe8a50c3ef"/>
+    <FileStats path="org/apache/qpid/server/security/auth/database/HashedUser.java" bugCount="1" size="91" bugHash="1437fa7ccc8f1cdf9ad0fe1ae7f73ede"/>
     <FileStats path="org/apache/qpid/server/security/auth/database/HashedUserTest.java" bugCount="0" size="33"/>
     <FileStats path="org/apache/qpid/server/security/auth/database/PasswordPrincipal.java" bugCount="0" size="9"/>
     <FileStats path="org/apache/qpid/server/security/auth/database/PlainPasswordFilePrincipalDatabase.java" bugCount="0" size="43"/>
@@ -6652,7 +6652,7 @@ In the example solution above, the GCM mode introduces an HMAC into the resultin
     <FileStats path="org/apache/qpid/server/security/auth/manager/AnonymousAuthenticationManagerFactory.java" bugCount="0" size="8"/>
     <FileStats path="org/apache/qpid/server/security/auth/manager/AnonymousAuthenticationManagerTest.java" bugCount="0" size="31"/>
     <FileStats path="org/apache/qpid/server/security/auth/manager/AnonymousAuthenticationManagerWithAccessChecking.java" bugCount="0" size="48"/>
-    <FileStats path="org/apache/qpid/server/security/auth/manager/AuthenticationResultCacher.java" bugCount="0" size="62"/>
+    <FileStats path="org/apache/qpid/server/security/auth/manager/AuthenticationResultCacher.java" bugCount="0" size="67"/>
     <FileStats path="org/apache/qpid/server/security/auth/manager/AuthenticationResultCacherTest.java" bugCount="0" size="88"/>
     <FileStats path="org/apache/qpid/server/security/auth/manager/Base64MD5PasswordDatabaseAuthenticationManager.java" bugCount="0" size="7"/>
     <FileStats path="org/apache/qpid/server/security/auth/manager/Base64MD5PasswordDatabaseAuthenticationManagerFactory.java" bugCount="0" size="8"/>
@@ -6757,7 +6757,7 @@ In the example solution above, the GCM mode introduces an HMAC into the resultin
     <FileStats path="org/apache/qpid/server/security/auth/sasl/scram/ScramSaslServerSourceAdapter.java" bugCount="0" size="82"/>
     <FileStats path="org/apache/qpid/server/security/encryption/AESKeyFileEncrypter.java" bugCount="4" size="57" bugHash="c1918ba20727c4c3abd6647088e5aced"/>
     <FileStats path="org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactory.java" bugCount="1" size="177" bugHash="12e3704f1b41c97d3f0fcd6cfcce8441"/>
-    <FileStats path="org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.java" bugCount="6" size="172" bugHash="7877196328c9e64f6acd43cc33d9de9a"/>
+    <FileStats path="org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.java" bugCount="6" size="172" bugHash="4ef72e8157db1cd5b45c40d6240ae451"/>
     <FileStats path="org/apache/qpid/server/security/encryption/AESKeyFileEncrypterTest.java" bugCount="2" size="96" bugHash="66a7177acf92fd4a54c38987f0652b6b"/>
     <FileStats path="org/apache/qpid/server/security/encryption/ConfigurationSecretEncrypter.java" bugCount="0" size="3"/>
     <FileStats path="org/apache/qpid/server/security/group/ConfiguredObjectRegistrationImpl.java" bugCount="0" size="19"/>
@@ -6984,7 +6984,7 @@ In the example solution above, the GCM mode introduces an HMAC into the resultin
     <FileStats path="org/apache/qpid/server/util/ExternalServiceTimeoutException.java" bugCount="0" size="7"/>
     <FileStats path="org/apache/qpid/server/util/FileHelper.java" bugCount="1" size="57" bugHash="d09125b89da490e62ae1bed288a24cf6"/>
     <FileStats path="org/apache/qpid/server/util/FileHelperTest.java" bugCount="3" size="89" bugHash="e84200d13e799a4c79f25a4a8fe882e0"/>
-    <FileStats path="org/apache/qpid/server/util/FileUtils.java" bugCount="4" size="121" bugHash="f4e996691e27d4f3a3de4b5d547132ed"/>
+    <FileStats path="org/apache/qpid/server/util/FileUtils.java" bugCount="4" size="121" bugHash="20d7072f698ab3e770c261b33b414feb"/>
     <FileStats path="org/apache/qpid/server/util/FileUtilsTest.java" bugCount="18" size="318" bugHash="8d605bb4d3264860b64a5954dd3c6205"/>
     <FileStats path="org/apache/qpid/server/util/FixedKeyMapCreator.java" bugCount="0" size="154"/>
     <FileStats path="org/apache/qpid/server/util/FutureHelper.java" bugCount="0" size="23"/>
@@ -7015,7 +7015,7 @@ In the example solution above, the GCM mode introduces an HMAC into the resultin
     <FileStats path="org/apache/qpid/server/util/urlstreamhandler/data/Handler.java" bugCount="0" size="50"/>
     <FileStats path="org/apache/qpid/server/virtualhost/AbstractNonConnectionAcceptingVirtualHost.java" bugCount="0" size="68"/>
     <FileStats path="org/apache/qpid/server/virtualhost/AbstractSystemMessageSource.java" bugCount="0" size="182"/>
-    <FileStats path="org/apache/qpid/server/virtualhost/AbstractVirtualHost.java" bugCount="3" size="1784" bugHash="21fe213507b0d39edf0fb410a48f03e3"/>
+    <FileStats path="org/apache/qpid/server/virtualhost/AbstractVirtualHost.java" bugCount="3" size="1784" bugHash="9db73df5b0743383b43925ba0cf244f6"/>
     <FileStats path="org/apache/qpid/server/virtualhost/AbstractVirtualHostTest.java" bugCount="0" size="209"/>
     <FileStats path="org/apache/qpid/server/virtualhost/AsynchronousMessageStoreRecoverer.java" bugCount="0" size="312"/>
     <FileStats path="org/apache/qpid/server/virtualhost/AsynchronousMessageStoreRecovererTest.java" bugCount="0" size="104"/>
@@ -8572,7 +8572,7 @@ In the example solution above, the GCM mode introduces an HMAC into the resultin
       <ClassStats class="org.apache.qpid.server.security.auth.UsernamePrincipal" sourceFile="UsernamePrincipal.java" interface="false" size="35" bugs="0"/>
       <ClassStats class="org.apache.qpid.server.security.auth.UsernamePrincipalTest" sourceFile="UsernamePrincipalTest.java" interface="false" size="31" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.apache.qpid.server.security.auth.database" total_bugs="5" total_types="18" total_size="961" priority_2="4" priority_1="1">
+    <PackageStats package="org.apache.qpid.server.security.auth.database" total_bugs="5" total_types="18" total_size="956" priority_2="4" priority_1="1">
       <ClassStats class="org.apache.qpid.server.security.auth.database.AbstractPasswordFilePrincipalDatabase" sourceFile="AbstractPasswordFilePrincipalDatabase.java" interface="false" size="180" bugs="0"/>
       <ClassStats class="org.apache.qpid.server.security.auth.database.AbstractPasswordFilePrincipalDatabase$1" sourceFile="AbstractPasswordFilePrincipalDatabase.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.apache.qpid.server.security.auth.database.AbstractPasswordFilePrincipalDatabase$2" sourceFile="AbstractPasswordFilePrincipalDatabase.java" interface="false" size="8" bugs="0"/>
@@ -8581,7 +8581,7 @@ In the example solution above, the GCM mode introduces an HMAC into the resultin
       <ClassStats class="org.apache.qpid.server.security.auth.database.Base64MD5PasswordFilePrincipalDatabaseTest" sourceFile="Base64MD5PasswordFilePrincipalDatabaseTest.java" interface="false" size="182" bugs="1" priority_2="1"/>
       <ClassStats class="org.apache.qpid.server.security.auth.database.Base64MD5PasswordFilePrincipalDatabaseTest$1" sourceFile="Base64MD5PasswordFilePrincipalDatabaseTest.java" interface="false" size="6" bugs="0"/>
       <ClassStats class="org.apache.qpid.server.security.auth.database.Base64MD5PasswordFilePrincipalDatabaseTest$2" sourceFile="Base64MD5PasswordFilePrincipalDatabaseTest.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="org.apache.qpid.server.security.auth.database.HashedUser" sourceFile="HashedUser.java" interface="false" size="96" bugs="1" priority_1="1"/>
+      <ClassStats class="org.apache.qpid.server.security.auth.database.HashedUser" sourceFile="HashedUser.java" interface="false" size="91" bugs="1" priority_1="1"/>
       <ClassStats class="org.apache.qpid.server.security.auth.database.HashedUserTest" sourceFile="HashedUserTest.java" interface="false" size="33" bugs="0"/>
       <ClassStats class="org.apache.qpid.server.security.auth.database.PasswordPrincipal" sourceFile="PasswordPrincipal.java" interface="true" size="9" bugs="0"/>
       <ClassStats class="org.apache.qpid.server.security.auth.database.PlainPasswordFilePrincipalDatabase" sourceFile="PlainPasswordFilePrincipalDatabase.java" interface="false" size="43" bugs="0"/>
@@ -8592,7 +8592,7 @@ In the example solution above, the GCM mode introduces an HMAC into the resultin
       <ClassStats class="org.apache.qpid.server.security.auth.database.PlainUserTest" sourceFile="PlainUserTest.java" interface="false" size="31" bugs="0"/>
       <ClassStats class="org.apache.qpid.server.security.auth.database.PrincipalDatabase" sourceFile="PrincipalDatabase.java" interface="true" size="13" bugs="0"/>
     </PackageStats>
-    <PackageStats package="org.apache.qpid.server.security.auth.manager" total_bugs="18" total_types="100" total_size="3461" priority_2="17" priority_1="1">
+    <PackageStats package="org.apache.qpid.server.security.auth.manager" total_bugs="18" total_types="100" total_size="3466" priority_2="17" priority_1="1">
       <ClassStats class="org.apache.qpid.server.security.auth.manager.AbstractAuthenticationManager" sourceFile="AbstractAuthenticationManager.java" interface="false" size="53" bugs="0"/>
       <ClassStats class="org.apache.qpid.server.security.auth.manager.AbstractScramAuthenticationManager" sourceFile="AbstractScramAuthenticationManager.java" interface="false" size="140" bugs="0"/>
       <ClassStats class="org.apache.qpid.server.security.auth.manager.AbstractScramAuthenticationManager$1" sourceFile="AbstractScramAuthenticationManager.java" interface="false" size="23" bugs="0"/>
@@ -8603,7 +8603,7 @@ In the example solution above, the GCM mode introduces an HMAC into the resultin
       <ClassStats class="org.apache.qpid.server.security.auth.manager.AnonymousAuthenticationManagerWithAccessChecking" sourceFile="AnonymousAuthenticationManagerWithAccessChecking.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="org.apache.qpid.server.security.auth.manager.AnonymousAuthenticationManagerWithAccessChecking$1" sourceFile="AnonymousAuthenticationManagerWithAccessChecking.java" interface="false" size="18" bugs="0"/>
       <ClassStats class="org.apache.qpid.server.security.auth.manager.AnonymousAuthenticationManagerWithAccessChecking$2" sourceFile="AnonymousAuthenticationManagerWithAccessChecking.java" interface="false" size="17" bugs="0"/>
-      <ClassStats class="org.apache.qpid.server.security.auth.manager.AuthenticationResultCacher" sourceFile="AuthenticationResultCacher.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="org.apache.qpid.server.security.auth.manager.AuthenticationResultCacher" sourceFile="AuthenticationResultCacher.java" interface="false" size="59" bugs="0"/>
       <ClassStats class="org.apache.qpid.server.security.auth.manager.AuthenticationResultCacher$1" sourceFile="AuthenticationResultCacher.java" interface="false" size="8" bugs="0"/>
       <ClassStats class="org.apache.qpid.server.security.auth.manager.AuthenticationResultCacherTest" sourceFile="AuthenticationResultCacherTest.java" interface="false" size="54" bugs="0"/>
       <ClassStats class="org.apache.qpid.server.security.auth.manager.AuthenticationResultCacherTest$1" sourceFile="AuthenticationResultCacherTest.java" interface="false" size="8" bugs="0"/>
@@ -9531,164 +9531,165 @@ In the example solution above, the GCM mode introduces an HMAC into the resultin
       <ClassStats class="org.apache.qpid.server.virtualhostnode.TestVirtualHostNodeFactory" sourceFile="TestVirtualHostNodeFactory.java" interface="false" size="9" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="3175" invocations="12811" avgMicrosecondsPerInvocation="247" maxMicrosecondsPerInvocation="859861" standardDeviationMicrosecondsPerInvocation="7606"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="2464" invocations="13685" avgMicrosecondsPerInvocation="180" maxMicrosecondsPerInvocation="16901" standardDeviationMicrosecondsPerInvocation="487"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.taintanalysis.TaintDataflowEngine" totalMilliseconds="2218" invocations="13685" avgMicrosecondsPerInvocation="162" maxMicrosecondsPerInvocation="30027" standardDeviationMicrosecondsPerInvocation="570"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="2169" invocations="14197" avgMicrosecondsPerInvocation="152" maxMicrosecondsPerInvocation="91037" standardDeviationMicrosecondsPerInvocation="836"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1903" invocations="7109" avgMicrosecondsPerInvocation="267" maxMicrosecondsPerInvocation="56042" standardDeviationMicrosecondsPerInvocation="748"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="1874" invocations="13075" avgMicrosecondsPerInvocation="143" maxMicrosecondsPerInvocation="17163" standardDeviationMicrosecondsPerInvocation="426"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="1764" invocations="14566" avgMicrosecondsPerInvocation="121" maxMicrosecondsPerInvocation="10712" standardDeviationMicrosecondsPerInvocation="303"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="1429" invocations="11094" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="9519" standardDeviationMicrosecondsPerInvocation="318"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1364" invocations="5818" avgMicrosecondsPerInvocation="234" maxMicrosecondsPerInvocation="115533" standardDeviationMicrosecondsPerInvocation="1763"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="1189" invocations="15454" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="10350" standardDeviationMicrosecondsPerInvocation="158"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="943" invocations="3113" avgMicrosecondsPerInvocation="302" maxMicrosecondsPerInvocation="16674" standardDeviationMicrosecondsPerInvocation="748"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.collect.CollectStatistics" totalMilliseconds="870" invocations="3113" avgMicrosecondsPerInvocation="279" maxMicrosecondsPerInvocation="74939" standardDeviationMicrosecondsPerInvocation="1502"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="802" invocations="3113" avgMicrosecondsPerInvocation="257" maxMicrosecondsPerInvocation="16038" standardDeviationMicrosecondsPerInvocation="699"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="762" invocations="16071" avgMicrosecondsPerInvocation="47" maxMicrosecondsPerInvocation="9163" standardDeviationMicrosecondsPerInvocation="150"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.DeletingWhileIterating" totalMilliseconds="651" invocations="2264" avgMicrosecondsPerInvocation="287" maxMicrosecondsPerInvocation="120366" standardDeviationMicrosecondsPerInvocation="3433"/>
-      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="651" invocations="851547" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="7253" standardDeviationMicrosecondsPerInvocation="8"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="598" invocations="2264" avgMicrosecondsPerInvocation="264" maxMicrosecondsPerInvocation="17709" standardDeviationMicrosecondsPerInvocation="721"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="503" invocations="2264" avgMicrosecondsPerInvocation="222" maxMicrosecondsPerInvocation="10056" standardDeviationMicrosecondsPerInvocation="511"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="485" invocations="13685" avgMicrosecondsPerInvocation="35" maxMicrosecondsPerInvocation="7733" standardDeviationMicrosecondsPerInvocation="122"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="451" invocations="561074" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="2876" standardDeviationMicrosecondsPerInvocation="6"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="438" invocations="2264" avgMicrosecondsPerInvocation="193" maxMicrosecondsPerInvocation="7039" standardDeviationMicrosecondsPerInvocation="417"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="422" invocations="2264" avgMicrosecondsPerInvocation="186" maxMicrosecondsPerInvocation="17345" standardDeviationMicrosecondsPerInvocation="1090"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="410" invocations="2264" avgMicrosecondsPerInvocation="181" maxMicrosecondsPerInvocation="25725" standardDeviationMicrosecondsPerInvocation="888"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.scala.XssMvcApiDetector" totalMilliseconds="383" invocations="2264" avgMicrosecondsPerInvocation="169" maxMicrosecondsPerInvocation="219777" standardDeviationMicrosecondsPerInvocation="4622"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="366" invocations="15454" avgMicrosecondsPerInvocation="23" maxMicrosecondsPerInvocation="32732" standardDeviationMicrosecondsPerInvocation="265"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.password.ConstantPasswordDetector" totalMilliseconds="353" invocations="2264" avgMicrosecondsPerInvocation="155" maxMicrosecondsPerInvocation="11621" standardDeviationMicrosecondsPerInvocation="445"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="351" invocations="12811" avgMicrosecondsPerInvocation="27" maxMicrosecondsPerInvocation="5103" standardDeviationMicrosecondsPerInvocation="66"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.ClassEnvy" totalMilliseconds="349" invocations="2264" avgMicrosecondsPerInvocation="154" maxMicrosecondsPerInvocation="11452" standardDeviationMicrosecondsPerInvocation="422"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.collect.CollectNullableMethodStatus" totalMilliseconds="346" invocations="3113" avgMicrosecondsPerInvocation="111" maxMicrosecondsPerInvocation="10283" standardDeviationMicrosecondsPerInvocation="367"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="339" invocations="2264" avgMicrosecondsPerInvocation="149" maxMicrosecondsPerInvocation="10190" standardDeviationMicrosecondsPerInvocation="396"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="337" invocations="2264" avgMicrosecondsPerInvocation="149" maxMicrosecondsPerInvocation="8384" standardDeviationMicrosecondsPerInvocation="391"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.WriteOnlyCollection" totalMilliseconds="336" invocations="2264" avgMicrosecondsPerInvocation="148" maxMicrosecondsPerInvocation="104131" standardDeviationMicrosecondsPerInvocation="2195"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.file.PathTraversalDetector" totalMilliseconds="325" invocations="2264" avgMicrosecondsPerInvocation="143" maxMicrosecondsPerInvocation="9293" standardDeviationMicrosecondsPerInvocation="363"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IntCast2LongAsInstant" totalMilliseconds="325" invocations="2264" avgMicrosecondsPerInvocation="143" maxMicrosecondsPerInvocation="167987" standardDeviationMicrosecondsPerInvocation="3532"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.InappropriateToStringUse" totalMilliseconds="323" invocations="2264" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="155851" standardDeviationMicrosecondsPerInvocation="3277"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="320" invocations="5824" avgMicrosecondsPerInvocation="54" maxMicrosecondsPerInvocation="24236" standardDeviationMicrosecondsPerInvocation="331"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="309" invocations="2264" avgMicrosecondsPerInvocation="136" maxMicrosecondsPerInvocation="6871" standardDeviationMicrosecondsPerInvocation="324"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.DubiousSetOfCollections" totalMilliseconds="304" invocations="2264" avgMicrosecondsPerInvocation="134" maxMicrosecondsPerInvocation="137594" standardDeviationMicrosecondsPerInvocation="2894"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="291" invocations="2264" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="9926" standardDeviationMicrosecondsPerInvocation="462"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.HttpResponseSplittingDetector" totalMilliseconds="280" invocations="2264" avgMicrosecondsPerInvocation="123" maxMicrosecondsPerInvocation="98984" standardDeviationMicrosecondsPerInvocation="2091"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.InvalidConstantArgument" totalMilliseconds="278" invocations="2264" avgMicrosecondsPerInvocation="122" maxMicrosecondsPerInvocation="5208" standardDeviationMicrosecondsPerInvocation="301"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.ArrayBasedCollections" totalMilliseconds="268" invocations="2264" avgMicrosecondsPerInvocation="118" maxMicrosecondsPerInvocation="88991" standardDeviationMicrosecondsPerInvocation="1886"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.PossiblyRedundantMethodCalls" totalMilliseconds="265" invocations="2264" avgMicrosecondsPerInvocation="117" maxMicrosecondsPerInvocation="5329" standardDeviationMicrosecondsPerInvocation="275"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.MapUsageIssues" totalMilliseconds="259" invocations="2264" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="91702" standardDeviationMicrosecondsPerInvocation="1933"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.LocalSynchronizedCollection" totalMilliseconds="258" invocations="2264" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="4173" standardDeviationMicrosecondsPerInvocation="263"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.LoggerOddities" totalMilliseconds="258" invocations="2264" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="9107" standardDeviationMicrosecondsPerInvocation="289"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="257" invocations="2264" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="4424" standardDeviationMicrosecondsPerInvocation="270"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="256" invocations="2264" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="3870" standardDeviationMicrosecondsPerInvocation="220"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="251" invocations="12051" avgMicrosecondsPerInvocation="20" maxMicrosecondsPerInvocation="3231" standardDeviationMicrosecondsPerInvocation="53"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="250" invocations="2264" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="7248" standardDeviationMicrosecondsPerInvocation="300"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="248" invocations="2264" avgMicrosecondsPerInvocation="109" maxMicrosecondsPerInvocation="9261" standardDeviationMicrosecondsPerInvocation="294"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.HangingExecutors" totalMilliseconds="246" invocations="2264" avgMicrosecondsPerInvocation="108" maxMicrosecondsPerInvocation="4736" standardDeviationMicrosecondsPerInvocation="260"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.SillynessPotPourri" totalMilliseconds="242" invocations="2264" avgMicrosecondsPerInvocation="107" maxMicrosecondsPerInvocation="4720" standardDeviationMicrosecondsPerInvocation="242"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="242" invocations="3113" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="2939" standardDeviationMicrosecondsPerInvocation="185"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.NonProductiveMethodCall" totalMilliseconds="240" invocations="2264" avgMicrosecondsPerInvocation="106" maxMicrosecondsPerInvocation="9769" standardDeviationMicrosecondsPerInvocation="353"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="236" invocations="2264" avgMicrosecondsPerInvocation="104" maxMicrosecondsPerInvocation="5099" standardDeviationMicrosecondsPerInvocation="253"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.WeakFilenameUtilsMethodDetector" totalMilliseconds="236" invocations="2264" avgMicrosecondsPerInvocation="104" maxMicrosecondsPerInvocation="10980" standardDeviationMicrosecondsPerInvocation="361"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.DubiousMapCollection" totalMilliseconds="231" invocations="2264" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="6710" standardDeviationMicrosecondsPerInvocation="236"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="229" invocations="3113" avgMicrosecondsPerInvocation="73" maxMicrosecondsPerInvocation="9458" standardDeviationMicrosecondsPerInvocation="221"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="228" invocations="2264" avgMicrosecondsPerInvocation="101" maxMicrosecondsPerInvocation="6740" standardDeviationMicrosecondsPerInvocation="375"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.injection.crlf.CrlfLogInjectionDetector" totalMilliseconds="228" invocations="2264" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="6921" standardDeviationMicrosecondsPerInvocation="296"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.PredictableRandomDetector" totalMilliseconds="225" invocations="2264" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="3811" standardDeviationMicrosecondsPerInvocation="205"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.UseAddAll" totalMilliseconds="221" invocations="2264" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="7020" standardDeviationMicrosecondsPerInvocation="282"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.SloppyClassReflection" totalMilliseconds="220" invocations="2264" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="3959" standardDeviationMicrosecondsPerInvocation="208"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="219" invocations="2264" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="10802" standardDeviationMicrosecondsPerInvocation="327"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.Section508Compliance" totalMilliseconds="215" invocations="2264" avgMicrosecondsPerInvocation="95" maxMicrosecondsPerInvocation="4226" standardDeviationMicrosecondsPerInvocation="207"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.PresizeCollections" totalMilliseconds="214" invocations="2264" avgMicrosecondsPerInvocation="94" maxMicrosecondsPerInvocation="3861" standardDeviationMicrosecondsPerInvocation="222"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="212" invocations="2264" avgMicrosecondsPerInvocation="94" maxMicrosecondsPerInvocation="3323" standardDeviationMicrosecondsPerInvocation="207"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.xpath.XPathInjectionDetector" totalMilliseconds="212" invocations="2264" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="9457" standardDeviationMicrosecondsPerInvocation="322"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.PossibleConstantAllocationInLoop" totalMilliseconds="210" invocations="2264" avgMicrosecondsPerInvocation="92" maxMicrosecondsPerInvocation="6474" standardDeviationMicrosecondsPerInvocation="253"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.InefficientStringBuffering" totalMilliseconds="209" invocations="2264" avgMicrosecondsPerInvocation="92" maxMicrosecondsPerInvocation="3414" standardDeviationMicrosecondsPerInvocation="219"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.JDBCVendorReliance" totalMilliseconds="208" invocations="2264" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="10176" standardDeviationMicrosecondsPerInvocation="291"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.HttpClientProblems" totalMilliseconds="207" invocations="2264" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="6386" standardDeviationMicrosecondsPerInvocation="242"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.jsp.JspIncludeDetector" totalMilliseconds="207" invocations="2264" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="9594" standardDeviationMicrosecondsPerInvocation="299"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="207" invocations="2264" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="3417" standardDeviationMicrosecondsPerInvocation="211"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="203" invocations="2264" avgMicrosecondsPerInvocation="89" maxMicrosecondsPerInvocation="6215" standardDeviationMicrosecondsPerInvocation="243"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.SuboptimalExpressionOrder" totalMilliseconds="202" invocations="2264" avgMicrosecondsPerInvocation="89" maxMicrosecondsPerInvocation="4450" standardDeviationMicrosecondsPerInvocation="216"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.injection.script.OgnlInjectionDetector" totalMilliseconds="201" invocations="2264" avgMicrosecondsPerInvocation="89" maxMicrosecondsPerInvocation="5530" standardDeviationMicrosecondsPerInvocation="238"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.IOIssues" totalMilliseconds="200" invocations="2264" avgMicrosecondsPerInvocation="88" maxMicrosecondsPerInvocation="8613" standardDeviationMicrosecondsPerInvocation="260"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.injection.script.ScriptInjectionDetector" totalMilliseconds="200" invocations="2264" avgMicrosecondsPerInvocation="88" maxMicrosecondsPerInvocation="9815" standardDeviationMicrosecondsPerInvocation="327"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.ModifyingUnmodifiableCollection" totalMilliseconds="199" invocations="2264" avgMicrosecondsPerInvocation="88" maxMicrosecondsPerInvocation="4426" standardDeviationMicrosecondsPerInvocation="214"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.UnrelatedCollectionContents" totalMilliseconds="199" invocations="2264" avgMicrosecondsPerInvocation="88" maxMicrosecondsPerInvocation="3137" standardDeviationMicrosecondsPerInvocation="207"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="199" invocations="3113" avgMicrosecondsPerInvocation="63" maxMicrosecondsPerInvocation="2020" standardDeviationMicrosecondsPerInvocation="161"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.OverlyPermissiveMethod" totalMilliseconds="199" invocations="2264" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="3278" standardDeviationMicrosecondsPerInvocation="198"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.ldap.LdapEntryPoisoningDetector" totalMilliseconds="199" invocations="2264" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="9603" standardDeviationMicrosecondsPerInvocation="370"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="197" invocations="2264" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="6875" standardDeviationMicrosecondsPerInvocation="230"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="197" invocations="2264" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="3920" standardDeviationMicrosecondsPerInvocation="214"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.SuspiciousNullGuard" totalMilliseconds="196" invocations="2264" avgMicrosecondsPerInvocation="86" maxMicrosecondsPerInvocation="7487" standardDeviationMicrosecondsPerInvocation="252"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.injection.command.CommandInjectionDetector" totalMilliseconds="195" invocations="2264" avgMicrosecondsPerInvocation="86" maxMicrosecondsPerInvocation="5661" standardDeviationMicrosecondsPerInvocation="257"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="193" invocations="2264" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="8964" standardDeviationMicrosecondsPerInvocation="261"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.UseToArray" totalMilliseconds="193" invocations="2264" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="5935" standardDeviationMicrosecondsPerInvocation="233"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.SuspiciousClusteredSessionSupport" totalMilliseconds="193" invocations="2264" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="5343" standardDeviationMicrosecondsPerInvocation="219"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.UseEnumCollections" totalMilliseconds="192" invocations="2264" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="7980" standardDeviationMicrosecondsPerInvocation="283"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.PossibleMemoryBloat" totalMilliseconds="192" invocations="2264" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="9073" standardDeviationMicrosecondsPerInvocation="300"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.OrphanedDOMNode" totalMilliseconds="191" invocations="2264" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="4148" standardDeviationMicrosecondsPerInvocation="202"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.StringifiedTypes" totalMilliseconds="191" invocations="2264" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="8928" standardDeviationMicrosecondsPerInvocation="265"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="191" invocations="2264" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="6806" standardDeviationMicrosecondsPerInvocation="177"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.injection.redirect.UnvalidatedRedirectDetector" totalMilliseconds="191" invocations="2264" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="4128" standardDeviationMicrosecondsPerInvocation="229"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.NeedlessAutoboxing" totalMilliseconds="190" invocations="2264" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="10586" standardDeviationMicrosecondsPerInvocation="305"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="190" invocations="15454" avgMicrosecondsPerInvocation="12" maxMicrosecondsPerInvocation="6443" standardDeviationMicrosecondsPerInvocation="87"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.ReadOfInstanceFieldInMethodInvokedByConstructorInSuperclass" totalMilliseconds="189" invocations="2264" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="8840" standardDeviationMicrosecondsPerInvocation="279"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.injection.ldap.LdapInjectionDetector" totalMilliseconds="188" invocations="2264" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="4546" standardDeviationMicrosecondsPerInvocation="225"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.injection.trust.TrustBoundaryViolationAttributeDetector" totalMilliseconds="187" invocations="2264" avgMicrosecondsPerInvocation="82" maxMicrosecondsPerInvocation="4568" standardDeviationMicrosecondsPerInvocation="240"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindFloatEquality" totalMilliseconds="186" invocations="2264" avgMicrosecondsPerInvocation="82" maxMicrosecondsPerInvocation="11535" standardDeviationMicrosecondsPerInvocation="355"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.CustomBuiltXML" totalMilliseconds="186" invocations="2264" avgMicrosecondsPerInvocation="82" maxMicrosecondsPerInvocation="4156" standardDeviationMicrosecondsPerInvocation="213"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadForLoop" totalMilliseconds="186" invocations="2264" avgMicrosecondsPerInvocation="82" maxMicrosecondsPerInvocation="5558" standardDeviationMicrosecondsPerInvocation="211"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.taintanalysis.extra.PotentialValueTracker" totalMilliseconds="186" invocations="2264" avgMicrosecondsPerInvocation="82" maxMicrosecondsPerInvocation="14209" standardDeviationMicrosecondsPerInvocation="360"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.ConstantListIndex" totalMilliseconds="184" invocations="2264" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="7765" standardDeviationMicrosecondsPerInvocation="244"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BadSyntaxForRegularExpression" totalMilliseconds="184" invocations="2264" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="11098" standardDeviationMicrosecondsPerInvocation="289"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.ArrayIndexOutOfBounds" totalMilliseconds="184" invocations="2264" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="5456" standardDeviationMicrosecondsPerInvocation="215"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUseOfNonSerializableValue" totalMilliseconds="182" invocations="2264" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="6105" standardDeviationMicrosecondsPerInvocation="187"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.xml.StdXmlTransformDetector" totalMilliseconds="181" invocations="2264" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="4447" standardDeviationMicrosecondsPerInvocation="229"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.injection.script.SpelViewDetector" totalMilliseconds="181" invocations="2264" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="5214" standardDeviationMicrosecondsPerInvocation="216"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.scala.ScalaSensitiveDataExposureDetector" totalMilliseconds="180" invocations="2264" avgMicrosecondsPerInvocation="79" maxMicrosecondsPerInvocation="4316" standardDeviationMicrosecondsPerInvocation="234"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.scala.PlayUnvalidatedRedirectDetector" totalMilliseconds="180" invocations="2264" avgMicrosecondsPerInvocation="79" maxMicrosecondsPerInvocation="4187" standardDeviationMicrosecondsPerInvocation="202"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.injection.custom.CustomInjectionDetector" totalMilliseconds="179" invocations="2264" avgMicrosecondsPerInvocation="79" maxMicrosecondsPerInvocation="4320" standardDeviationMicrosecondsPerInvocation="223"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.xml.XmlDecoderDetector" totalMilliseconds="178" invocations="2264" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="7762" standardDeviationMicrosecondsPerInvocation="244"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.injection.aws.AwsQueryInjectionDetector" totalMilliseconds="178" invocations="2264" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="3861" standardDeviationMicrosecondsPerInvocation="215"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.DubiousListCollection" totalMilliseconds="176" invocations="2264" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="2879" standardDeviationMicrosecondsPerInvocation="174"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="176" invocations="3113" avgMicrosecondsPerInvocation="56" maxMicrosecondsPerInvocation="6766" standardDeviationMicrosecondsPerInvocation="219"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.ContraVariantArrayAssignment" totalMilliseconds="176" invocations="2264" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="3089" standardDeviationMicrosecondsPerInvocation="184"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.OverlyConcreteParameter" totalMilliseconds="176" invocations="2264" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="1650" standardDeviationMicrosecondsPerInvocation="104"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.ReflectionOnObjectMethods" totalMilliseconds="175" invocations="2264" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="3054" standardDeviationMicrosecondsPerInvocation="179"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.CharsetIssues" totalMilliseconds="175" invocations="2264" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="10549" standardDeviationMicrosecondsPerInvocation="287"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.template.VelocityDetector" totalMilliseconds="175" invocations="2264" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="5122" standardDeviationMicrosecondsPerInvocation="222"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.PartiallyConstructedObjectAccess" totalMilliseconds="174" invocations="2264" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="4083" standardDeviationMicrosecondsPerInvocation="221"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.android.ExternalFileAccessDetector" totalMilliseconds="174" invocations="2264" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="4619" standardDeviationMicrosecondsPerInvocation="203"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.SpuriousThreadStates" totalMilliseconds="173" invocations="2264" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="10359" standardDeviationMicrosecondsPerInvocation="310"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.spring.CorsRegistryCORSDetector" totalMilliseconds="173" invocations="2264" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="3740" standardDeviationMicrosecondsPerInvocation="186"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.ListUsageIssues" totalMilliseconds="173" invocations="2264" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="11106" standardDeviationMicrosecondsPerInvocation="295"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.SyncCollectionIterators" totalMilliseconds="172" invocations="2264" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="4885" standardDeviationMicrosecondsPerInvocation="206"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.UseSplit" totalMilliseconds="172" invocations="2264" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="2858" standardDeviationMicrosecondsPerInvocation="172"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="172" invocations="2264" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="6969" standardDeviationMicrosecondsPerInvocation="183"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="171" invocations="3113" avgMicrosecondsPerInvocation="55" maxMicrosecondsPerInvocation="7463" standardDeviationMicrosecondsPerInvocation="170"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.injection.sql.SqlInjectionDetector" totalMilliseconds="171" invocations="2264" avgMicrosecondsPerInvocation="75" maxMicrosecondsPerInvocation="4387" standardDeviationMicrosecondsPerInvocation="211"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="171" invocations="2264" avgMicrosecondsPerInvocation="75" maxMicrosecondsPerInvocation="2661" standardDeviationMicrosecondsPerInvocation="167"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.injection.fileDisclosure.FileDisclosureDetector" totalMilliseconds="171" invocations="2264" avgMicrosecondsPerInvocation="75" maxMicrosecondsPerInvocation="8496" standardDeviationMicrosecondsPerInvocation="269"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.injection.formatter.FormatStringManipulationDetector" totalMilliseconds="170" invocations="2264" avgMicrosecondsPerInvocation="75" maxMicrosecondsPerInvocation="7970" standardDeviationMicrosecondsPerInvocation="262"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.crypto.HazelcastSymmetricEncryptionDetector" totalMilliseconds="170" invocations="2264" avgMicrosecondsPerInvocation="75" maxMicrosecondsPerInvocation="3842" standardDeviationMicrosecondsPerInvocation="181"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.ConflatingResourcesAndFiles" totalMilliseconds="170" invocations="2264" avgMicrosecondsPerInvocation="75" maxMicrosecondsPerInvocation="9935" standardDeviationMicrosecondsPerInvocation="309"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.injection.ssrf.SSRFDetector" totalMilliseconds="169" invocations="2264" avgMicrosecondsPerInvocation="74" maxMicrosecondsPerInvocation="4010" standardDeviationMicrosecondsPerInvocation="221"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.csrf.SpringCsrfProtectionDisabledDetector" totalMilliseconds="169" invocations="2264" avgMicrosecondsPerInvocation="74" maxMicrosecondsPerInvocation="3105" standardDeviationMicrosecondsPerInvocation="172"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteRecursiveLoop" totalMilliseconds="169" invocations="2264" avgMicrosecondsPerInvocation="74" maxMicrosecondsPerInvocation="7350" standardDeviationMicrosecondsPerInvocation="231"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.OptionalIssues" totalMilliseconds="169" invocations="2264" avgMicrosecondsPerInvocation="74" maxMicrosecondsPerInvocation="2763" standardDeviationMicrosecondsPerInvocation="177"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.ContainsBasedConditional" totalMilliseconds="167" invocations="2264" avgMicrosecondsPerInvocation="73" maxMicrosecondsPerInvocation="6112" standardDeviationMicrosecondsPerInvocation="213"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.crypto.ErrorMessageExposureDetector" totalMilliseconds="166" invocations="2264" avgMicrosecondsPerInvocation="73" maxMicrosecondsPerInvocation="3119" standardDeviationMicrosecondsPerInvocation="181"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindFieldSelfAssignment" totalMilliseconds="166" invocations="2264" avgMicrosecondsPerInvocation="73" maxMicrosecondsPerInvocation="4957" standardDeviationMicrosecondsPerInvocation="194"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.crypto.EsapiEncryptorDetector" totalMilliseconds="166" invocations="2264" avgMicrosecondsPerInvocation="73" maxMicrosecondsPerInvocation="6851" standardDeviationMicrosecondsPerInvocation="282"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.injection.trust.TrustBoundaryViolationValueDetector" totalMilliseconds="166" invocations="2264" avgMicrosecondsPerInvocation="73" maxMicrosecondsPerInvocation="4370" standardDeviationMicrosecondsPerInvocation="226"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.CommonsStringBuilderToString" totalMilliseconds="164" invocations="2264" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="2896" standardDeviationMicrosecondsPerInvocation="167"/>
-      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="164" invocations="5556" avgMicrosecondsPerInvocation="29" maxMicrosecondsPerInvocation="12244" standardDeviationMicrosecondsPerInvocation="187"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.xml.EnabledExtensionsInApacheXmlRpcDetector" totalMilliseconds="164" invocations="2264" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="2772" standardDeviationMicrosecondsPerInvocation="179"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.crypto.WeakTLSDetector" totalMilliseconds="163" invocations="2264" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="11235" standardDeviationMicrosecondsPerInvocation="288"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.crypto.WeakMessageDigestDetector" totalMilliseconds="163" invocations="2264" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="2835" standardDeviationMicrosecondsPerInvocation="170"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.ReDosDetector" totalMilliseconds="163" invocations="2264" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="7271" standardDeviationMicrosecondsPerInvocation="231"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.URLProblems" totalMilliseconds="163" invocations="2264" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="4484" standardDeviationMicrosecondsPerInvocation="203"/>
-      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.CompareClassNameEquals" totalMilliseconds="163" invocations="2264" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="10882" standardDeviationMicrosecondsPerInvocation="280"/>
-      <ClassProfile name="com.h3xstream.findsecbugs.ExternalConfigurationControlDetector" totalMilliseconds="163" invocations="2264" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="4762" standardDeviationMicrosecondsPerInvocation="221"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="2281" invocations="12811" avgMicrosecondsPerInvocation="178" maxMicrosecondsPerInvocation="120952" standardDeviationMicrosecondsPerInvocation="1296"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="2247" invocations="13685" avgMicrosecondsPerInvocation="164" maxMicrosecondsPerInvocation="31663" standardDeviationMicrosecondsPerInvocation="473"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.taintanalysis.TaintDataflowEngine" totalMilliseconds="2023" invocations="13685" avgMicrosecondsPerInvocation="147" maxMicrosecondsPerInvocation="18959" standardDeviationMicrosecondsPerInvocation="473"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="1909" invocations="14565" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="117329" standardDeviationMicrosecondsPerInvocation="1518"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="1868" invocations="14196" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="10534" standardDeviationMicrosecondsPerInvocation="316"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1864" invocations="7109" avgMicrosecondsPerInvocation="262" maxMicrosecondsPerInvocation="78954" standardDeviationMicrosecondsPerInvocation="976"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="1649" invocations="13075" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="20914" standardDeviationMicrosecondsPerInvocation="431"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1389" invocations="5818" avgMicrosecondsPerInvocation="238" maxMicrosecondsPerInvocation="66655" standardDeviationMicrosecondsPerInvocation="1285"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="1308" invocations="11094" avgMicrosecondsPerInvocation="117" maxMicrosecondsPerInvocation="10468" standardDeviationMicrosecondsPerInvocation="303"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="1108" invocations="15454" avgMicrosecondsPerInvocation="71" maxMicrosecondsPerInvocation="12444" standardDeviationMicrosecondsPerInvocation="158"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="974" invocations="3113" avgMicrosecondsPerInvocation="313" maxMicrosecondsPerInvocation="18514" standardDeviationMicrosecondsPerInvocation="788"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.collect.CollectStatistics" totalMilliseconds="833" invocations="3113" avgMicrosecondsPerInvocation="267" maxMicrosecondsPerInvocation="13624" standardDeviationMicrosecondsPerInvocation="640"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="814" invocations="3113" avgMicrosecondsPerInvocation="261" maxMicrosecondsPerInvocation="12634" standardDeviationMicrosecondsPerInvocation="668"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="696" invocations="16071" avgMicrosecondsPerInvocation="43" maxMicrosecondsPerInvocation="6596" standardDeviationMicrosecondsPerInvocation="112"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.template.PebbleDetector" totalMilliseconds="657" invocations="2264" avgMicrosecondsPerInvocation="290" maxMicrosecondsPerInvocation="529456" standardDeviationMicrosecondsPerInvocation="11124"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="603" invocations="851547" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="5113" standardDeviationMicrosecondsPerInvocation="8"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="565" invocations="2264" avgMicrosecondsPerInvocation="249" maxMicrosecondsPerInvocation="23239" standardDeviationMicrosecondsPerInvocation="758"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="447" invocations="2264" avgMicrosecondsPerInvocation="197" maxMicrosecondsPerInvocation="9895" standardDeviationMicrosecondsPerInvocation="451"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="435" invocations="13685" avgMicrosecondsPerInvocation="31" maxMicrosecondsPerInvocation="5217" standardDeviationMicrosecondsPerInvocation="90"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="428" invocations="561078" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="8613" standardDeviationMicrosecondsPerInvocation="14"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="415" invocations="2264" avgMicrosecondsPerInvocation="183" maxMicrosecondsPerInvocation="10329" standardDeviationMicrosecondsPerInvocation="477"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="401" invocations="2264" avgMicrosecondsPerInvocation="177" maxMicrosecondsPerInvocation="47000" standardDeviationMicrosecondsPerInvocation="1360"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="396" invocations="2264" avgMicrosecondsPerInvocation="174" maxMicrosecondsPerInvocation="81672" standardDeviationMicrosecondsPerInvocation="1757"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="372" invocations="2264" avgMicrosecondsPerInvocation="164" maxMicrosecondsPerInvocation="33784" standardDeviationMicrosecondsPerInvocation="928"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.DeletingWhileIterating" totalMilliseconds="370" invocations="2264" avgMicrosecondsPerInvocation="163" maxMicrosecondsPerInvocation="12998" standardDeviationMicrosecondsPerInvocation="454"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.collect.CollectNullableMethodStatus" totalMilliseconds="355" invocations="3113" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="7954" standardDeviationMicrosecondsPerInvocation="342"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="340" invocations="5824" avgMicrosecondsPerInvocation="58" maxMicrosecondsPerInvocation="18094" standardDeviationMicrosecondsPerInvocation="284"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="336" invocations="15454" avgMicrosecondsPerInvocation="21" maxMicrosecondsPerInvocation="31782" standardDeviationMicrosecondsPerInvocation="257"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="315" invocations="12811" avgMicrosecondsPerInvocation="24" maxMicrosecondsPerInvocation="1428" standardDeviationMicrosecondsPerInvocation="48"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.ClassEnvy" totalMilliseconds="299" invocations="2264" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="9357" standardDeviationMicrosecondsPerInvocation="351"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.file.PathTraversalDetector" totalMilliseconds="298" invocations="2264" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="7227" standardDeviationMicrosecondsPerInvocation="316"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="298" invocations="2264" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="6768" standardDeviationMicrosecondsPerInvocation="335"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.password.ConstantPasswordDetector" totalMilliseconds="294" invocations="2264" avgMicrosecondsPerInvocation="130" maxMicrosecondsPerInvocation="9401" standardDeviationMicrosecondsPerInvocation="330"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.InvalidConstantArgument" totalMilliseconds="279" invocations="2264" avgMicrosecondsPerInvocation="123" maxMicrosecondsPerInvocation="11914" standardDeviationMicrosecondsPerInvocation="456"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison" totalMilliseconds="271" invocations="2264" avgMicrosecondsPerInvocation="119" maxMicrosecondsPerInvocation="8229" standardDeviationMicrosecondsPerInvocation="291"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="251" invocations="3113" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="4418" standardDeviationMicrosecondsPerInvocation="211"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.taintanalysis.extra.PotentialValueTracker" totalMilliseconds="250" invocations="2264" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="91882" standardDeviationMicrosecondsPerInvocation="1941"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="245" invocations="2264" avgMicrosecondsPerInvocation="108" maxMicrosecondsPerInvocation="12011" standardDeviationMicrosecondsPerInvocation="345"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="243" invocations="3113" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="112955" standardDeviationMicrosecondsPerInvocation="2050"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.PossiblyRedundantMethodCalls" totalMilliseconds="242" invocations="2264" avgMicrosecondsPerInvocation="107" maxMicrosecondsPerInvocation="7166" standardDeviationMicrosecondsPerInvocation="272"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="240" invocations="2264" avgMicrosecondsPerInvocation="106" maxMicrosecondsPerInvocation="6522" standardDeviationMicrosecondsPerInvocation="292"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.HangingExecutors" totalMilliseconds="240" invocations="2264" avgMicrosecondsPerInvocation="106" maxMicrosecondsPerInvocation="9350" standardDeviationMicrosecondsPerInvocation="368"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="240" invocations="3113" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="6882" standardDeviationMicrosecondsPerInvocation="196"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.LocalSynchronizedCollection" totalMilliseconds="238" invocations="2264" avgMicrosecondsPerInvocation="105" maxMicrosecondsPerInvocation="7586" standardDeviationMicrosecondsPerInvocation="266"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.SillynessPotPourri" totalMilliseconds="237" invocations="2264" avgMicrosecondsPerInvocation="105" maxMicrosecondsPerInvocation="9178" standardDeviationMicrosecondsPerInvocation="305"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindHEmismatch" totalMilliseconds="233" invocations="2264" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="5556" standardDeviationMicrosecondsPerInvocation="214"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.SpuriousThreadStates" totalMilliseconds="231" invocations="2264" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="88272" standardDeviationMicrosecondsPerInvocation="1860"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="227" invocations="2264" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="10548" standardDeviationMicrosecondsPerInvocation="320"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref" totalMilliseconds="227" invocations="2264" avgMicrosecondsPerInvocation="100" maxMicrosecondsPerInvocation="7182" standardDeviationMicrosecondsPerInvocation="245"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="224" invocations="12051" avgMicrosecondsPerInvocation="18" maxMicrosecondsPerInvocation="11123" standardDeviationMicrosecondsPerInvocation="109"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture" totalMilliseconds="223" invocations="2264" avgMicrosecondsPerInvocation="98" maxMicrosecondsPerInvocation="6562" standardDeviationMicrosecondsPerInvocation="244"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="220" invocations="2264" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="10795" standardDeviationMicrosecondsPerInvocation="395"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.LoggerOddities" totalMilliseconds="218" invocations="2264" avgMicrosecondsPerInvocation="96" maxMicrosecondsPerInvocation="5313" standardDeviationMicrosecondsPerInvocation="204"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.PresizeCollections" totalMilliseconds="217" invocations="2264" avgMicrosecondsPerInvocation="96" maxMicrosecondsPerInvocation="9929" standardDeviationMicrosecondsPerInvocation="345"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.NonProductiveMethodCall" totalMilliseconds="214" invocations="2264" avgMicrosecondsPerInvocation="94" maxMicrosecondsPerInvocation="8995" standardDeviationMicrosecondsPerInvocation="318"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.PredictableRandomDetector" totalMilliseconds="212" invocations="2264" avgMicrosecondsPerInvocation="93" maxMicrosecondsPerInvocation="6526" standardDeviationMicrosecondsPerInvocation="244"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.DubiousMapCollection" totalMilliseconds="210" invocations="2264" avgMicrosecondsPerInvocation="92" maxMicrosecondsPerInvocation="4983" standardDeviationMicrosecondsPerInvocation="196"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.SuboptimalExpressionOrder" totalMilliseconds="206" invocations="2264" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="9767" standardDeviationMicrosecondsPerInvocation="377"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.crlf.CrlfLogInjectionDetector" totalMilliseconds="206" invocations="2264" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="6203" standardDeviationMicrosecondsPerInvocation="268"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.WriteOnlyCollection" totalMilliseconds="206" invocations="2264" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="5406" standardDeviationMicrosecondsPerInvocation="204"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.WeakFilenameUtilsMethodDetector" totalMilliseconds="202" invocations="2264" avgMicrosecondsPerInvocation="89" maxMicrosecondsPerInvocation="4984" standardDeviationMicrosecondsPerInvocation="198"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.RepeatedConditionals" totalMilliseconds="198" invocations="2264" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="6966" standardDeviationMicrosecondsPerInvocation="241"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.xpath.XPathInjectionDetector" totalMilliseconds="198" invocations="2264" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="10534" standardDeviationMicrosecondsPerInvocation="357"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.PossibleConstantAllocationInLoop" totalMilliseconds="198" invocations="2264" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="7271" standardDeviationMicrosecondsPerInvocation="305"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.SloppyClassReflection" totalMilliseconds="198" invocations="2264" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="6068" standardDeviationMicrosecondsPerInvocation="210"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.UnusedParameter" totalMilliseconds="197" invocations="2264" avgMicrosecondsPerInvocation="87" maxMicrosecondsPerInvocation="132876" standardDeviationMicrosecondsPerInvocation="2792"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindSelfComparison" totalMilliseconds="196" invocations="2264" avgMicrosecondsPerInvocation="86" maxMicrosecondsPerInvocation="6601" standardDeviationMicrosecondsPerInvocation="234"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="196" invocations="3113" avgMicrosecondsPerInvocation="63" maxMicrosecondsPerInvocation="2334" standardDeviationMicrosecondsPerInvocation="161"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.UseAddAll" totalMilliseconds="191" invocations="2264" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="6606" standardDeviationMicrosecondsPerInvocation="233"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SwitchFallthrough" totalMilliseconds="189" invocations="2264" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="5404" standardDeviationMicrosecondsPerInvocation="223"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.InefficientStringBuffering" totalMilliseconds="188" invocations="2264" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="5068" standardDeviationMicrosecondsPerInvocation="201"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.IOIssues" totalMilliseconds="187" invocations="2264" avgMicrosecondsPerInvocation="82" maxMicrosecondsPerInvocation="11216" standardDeviationMicrosecondsPerInvocation="305"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.Section508Compliance" totalMilliseconds="186" invocations="2264" avgMicrosecondsPerInvocation="82" maxMicrosecondsPerInvocation="4704" standardDeviationMicrosecondsPerInvocation="179"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="184" invocations="3113" avgMicrosecondsPerInvocation="59" maxMicrosecondsPerInvocation="11038" standardDeviationMicrosecondsPerInvocation="230"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.OverlyPermissiveMethod" totalMilliseconds="184" invocations="2264" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="6373" standardDeviationMicrosecondsPerInvocation="237"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="184" invocations="3113" avgMicrosecondsPerInvocation="59" maxMicrosecondsPerInvocation="6460" standardDeviationMicrosecondsPerInvocation="222"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.script.OgnlInjectionDetector" totalMilliseconds="182" invocations="2264" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="6578" standardDeviationMicrosecondsPerInvocation="227"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.HttpClientProblems" totalMilliseconds="182" invocations="2264" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="5644" standardDeviationMicrosecondsPerInvocation="215"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.ModifyingUnmodifiableCollection" totalMilliseconds="181" invocations="2264" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="6329" standardDeviationMicrosecondsPerInvocation="233"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.JDBCVendorReliance" totalMilliseconds="181" invocations="2264" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="5535" standardDeviationMicrosecondsPerInvocation="200"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDoubleCheck" totalMilliseconds="179" invocations="2264" avgMicrosecondsPerInvocation="79" maxMicrosecondsPerInvocation="7231" standardDeviationMicrosecondsPerInvocation="245"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.command.CommandInjectionDetector" totalMilliseconds="178" invocations="2264" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="6440" standardDeviationMicrosecondsPerInvocation="250"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.jsp.JspIncludeDetector" totalMilliseconds="178" invocations="2264" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="15689" standardDeviationMicrosecondsPerInvocation="362"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.UnrelatedCollectionContents" totalMilliseconds="177" invocations="2264" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="4849" standardDeviationMicrosecondsPerInvocation="193"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.IncompatMask" totalMilliseconds="177" invocations="2264" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="4749" standardDeviationMicrosecondsPerInvocation="183"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="175" invocations="2264" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="5367" standardDeviationMicrosecondsPerInvocation="204"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.OrphanedDOMNode" totalMilliseconds="175" invocations="2264" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="5011" standardDeviationMicrosecondsPerInvocation="192"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.ContraVariantArrayAssignment" totalMilliseconds="175" invocations="2264" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="7164" standardDeviationMicrosecondsPerInvocation="263"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="175" invocations="2264" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="7001" standardDeviationMicrosecondsPerInvocation="187"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.CustomBuiltXML" totalMilliseconds="175" invocations="2264" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="9521" standardDeviationMicrosecondsPerInvocation="278"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.SuspiciousNullGuard" totalMilliseconds="174" invocations="2264" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="6678" standardDeviationMicrosecondsPerInvocation="210"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.redirect.UnvalidatedRedirectDetector" totalMilliseconds="173" invocations="2264" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="6496" standardDeviationMicrosecondsPerInvocation="239"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CrossSiteScripting" totalMilliseconds="173" invocations="2264" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="5477" standardDeviationMicrosecondsPerInvocation="203"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="173" invocations="5556" avgMicrosecondsPerInvocation="31" maxMicrosecondsPerInvocation="10796" standardDeviationMicrosecondsPerInvocation="167"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.ldap.LdapInjectionDetector" totalMilliseconds="173" invocations="2264" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="4590" standardDeviationMicrosecondsPerInvocation="225"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.SuspiciousClusteredSessionSupport" totalMilliseconds="173" invocations="2264" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="5136" standardDeviationMicrosecondsPerInvocation="192"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="172" invocations="15454" avgMicrosecondsPerInvocation="11" maxMicrosecondsPerInvocation="9045" standardDeviationMicrosecondsPerInvocation="89"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.ConcurrentCollectionIssues" totalMilliseconds="171" invocations="2264" avgMicrosecondsPerInvocation="75" maxMicrosecondsPerInvocation="10334" standardDeviationMicrosecondsPerInvocation="356"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.DubiousListCollection" totalMilliseconds="170" invocations="2264" avgMicrosecondsPerInvocation="75" maxMicrosecondsPerInvocation="5539" standardDeviationMicrosecondsPerInvocation="206"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.ReflectionOnObjectMethods" totalMilliseconds="170" invocations="2264" avgMicrosecondsPerInvocation="75" maxMicrosecondsPerInvocation="9318" standardDeviationMicrosecondsPerInvocation="265"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.UseToArray" totalMilliseconds="169" invocations="2264" avgMicrosecondsPerInvocation="74" maxMicrosecondsPerInvocation="4802" standardDeviationMicrosecondsPerInvocation="207"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.PossibleMemoryBloat" totalMilliseconds="169" invocations="2264" avgMicrosecondsPerInvocation="74" maxMicrosecondsPerInvocation="5658" standardDeviationMicrosecondsPerInvocation="211"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.OverlyConcreteParameter" totalMilliseconds="168" invocations="2264" avgMicrosecondsPerInvocation="74" maxMicrosecondsPerInvocation="3184" standardDeviationMicrosecondsPerInvocation="127"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.UseEnumCollections" totalMilliseconds="167" invocations="2264" avgMicrosecondsPerInvocation="74" maxMicrosecondsPerInvocation="9404" standardDeviationMicrosecondsPerInvocation="263"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.script.ScriptInjectionDetector" totalMilliseconds="167" invocations="2264" avgMicrosecondsPerInvocation="74" maxMicrosecondsPerInvocation="5597" standardDeviationMicrosecondsPerInvocation="216"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.StringifiedTypes" totalMilliseconds="167" invocations="2264" avgMicrosecondsPerInvocation="73" maxMicrosecondsPerInvocation="4840" standardDeviationMicrosecondsPerInvocation="196"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BadSyntaxForRegularExpression" totalMilliseconds="166" invocations="2264" avgMicrosecondsPerInvocation="73" maxMicrosecondsPerInvocation="7608" standardDeviationMicrosecondsPerInvocation="241"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="166" invocations="3113" avgMicrosecondsPerInvocation="53" maxMicrosecondsPerInvocation="5792" standardDeviationMicrosecondsPerInvocation="171"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindFieldSelfAssignment" totalMilliseconds="165" invocations="2264" avgMicrosecondsPerInvocation="73" maxMicrosecondsPerInvocation="11031" standardDeviationMicrosecondsPerInvocation="333"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.UseSplit" totalMilliseconds="165" invocations="2264" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="10521" standardDeviationMicrosecondsPerInvocation="276"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.xml.StdXmlTransformDetector" totalMilliseconds="164" invocations="2264" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="5776" standardDeviationMicrosecondsPerInvocation="215"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadForLoop" totalMilliseconds="164" invocations="2264" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="4691" standardDeviationMicrosecondsPerInvocation="183"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.crypto.HazelcastSymmetricEncryptionDetector" totalMilliseconds="164" invocations="2264" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="10186" standardDeviationMicrosecondsPerInvocation="275"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.csrf.SpringCsrfProtectionDisabledDetector" totalMilliseconds="163" invocations="2264" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="9149" standardDeviationMicrosecondsPerInvocation="257"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.trust.TrustBoundaryViolationAttributeDetector" totalMilliseconds="163" invocations="2264" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="5143" standardDeviationMicrosecondsPerInvocation="210"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.custom.CustomInjectionDetector" totalMilliseconds="163" invocations="2264" avgMicrosecondsPerInvocation="72" maxMicrosecondsPerInvocation="5833" standardDeviationMicrosecondsPerInvocation="215"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.ConstantListIndex" totalMilliseconds="162" invocations="2264" avgMicrosecondsPerInvocation="71" maxMicrosecondsPerInvocation="4213" standardDeviationMicrosecondsPerInvocation="180"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.HttpResponseSplittingDetector" totalMilliseconds="161" invocations="2264" avgMicrosecondsPerInvocation="71" maxMicrosecondsPerInvocation="5578" standardDeviationMicrosecondsPerInvocation="215"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUseOfNonSerializableValue" totalMilliseconds="161" invocations="2264" avgMicrosecondsPerInvocation="71" maxMicrosecondsPerInvocation="2232" standardDeviationMicrosecondsPerInvocation="118"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.ConflatingResourcesAndFiles" totalMilliseconds="161" invocations="2264" avgMicrosecondsPerInvocation="71" maxMicrosecondsPerInvocation="10374" standardDeviationMicrosecondsPerInvocation="344"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.ArrayIndexOutOfBounds" totalMilliseconds="160" invocations="2264" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="5596" standardDeviationMicrosecondsPerInvocation="202"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.sql.SqlInjectionDetector" totalMilliseconds="160" invocations="2264" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="5321" standardDeviationMicrosecondsPerInvocation="210"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="160" invocations="2264" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="5522" standardDeviationMicrosecondsPerInvocation="187"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.scala.ScalaSensitiveDataExposureDetector" totalMilliseconds="160" invocations="2264" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="3286" standardDeviationMicrosecondsPerInvocation="193"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.template.VelocityDetector" totalMilliseconds="159" invocations="2264" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="9967" standardDeviationMicrosecondsPerInvocation="266"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.xml.EnabledExtensionsInApacheXmlRpcDetector" totalMilliseconds="159" invocations="2264" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="9750" standardDeviationMicrosecondsPerInvocation="269"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.OptionalIssues" totalMilliseconds="158" invocations="2264" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="4516" standardDeviationMicrosecondsPerInvocation="183"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNonShortCircuit" totalMilliseconds="158" invocations="2264" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="9616" standardDeviationMicrosecondsPerInvocation="267"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.aws.AwsQueryInjectionDetector" totalMilliseconds="158" invocations="2264" avgMicrosecondsPerInvocation="70" maxMicrosecondsPerInvocation="3346" standardDeviationMicrosecondsPerInvocation="194"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReadOfInstanceFieldInMethodInvokedByConstructorInSuperclass" totalMilliseconds="158" invocations="2264" avgMicrosecondsPerInvocation="69" maxMicrosecondsPerInvocation="3539" standardDeviationMicrosecondsPerInvocation="177"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.MapUsageIssues" totalMilliseconds="157" invocations="2264" avgMicrosecondsPerInvocation="69" maxMicrosecondsPerInvocation="6436" standardDeviationMicrosecondsPerInvocation="210"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.PartiallyConstructedObjectAccess" totalMilliseconds="157" invocations="2264" avgMicrosecondsPerInvocation="69" maxMicrosecondsPerInvocation="5482" standardDeviationMicrosecondsPerInvocation="209"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindFloatEquality" totalMilliseconds="157" invocations="2264" avgMicrosecondsPerInvocation="69" maxMicrosecondsPerInvocation="9660" standardDeviationMicrosecondsPerInvocation="271"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.spring.CorsRegistryCORSDetector" totalMilliseconds="156" invocations="2264" avgMicrosecondsPerInvocation="69" maxMicrosecondsPerInvocation="5101" standardDeviationMicrosecondsPerInvocation="185"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.scala.PlayUnvalidatedRedirectDetector" totalMilliseconds="156" invocations="2264" avgMicrosecondsPerInvocation="69" maxMicrosecondsPerInvocation="3671" standardDeviationMicrosecondsPerInvocation="171"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.crypto.cipher.DesUsageDetector" totalMilliseconds="156" invocations="2264" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="5806" standardDeviationMicrosecondsPerInvocation="230"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.trust.TrustBoundaryViolationValueDetector" totalMilliseconds="155" invocations="2264" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="11878" standardDeviationMicrosecondsPerInvocation="323"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.ArrayBasedCollections" totalMilliseconds="155" invocations="2264" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="5082" standardDeviationMicrosecondsPerInvocation="204"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.NeedlessAutoboxing" totalMilliseconds="155" invocations="2264" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="4501" standardDeviationMicrosecondsPerInvocation="176"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.SyncCollectionIterators" totalMilliseconds="155" invocations="2264" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="5160" standardDeviationMicrosecondsPerInvocation="191"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.DubiousSetOfCollections" totalMilliseconds="155" invocations="2264" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="7289" standardDeviationMicrosecondsPerInvocation="235"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.ExternalConfigurationControlDetector" totalMilliseconds="154" invocations="2264" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="6221" standardDeviationMicrosecondsPerInvocation="245"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.xml.XmlDecoderDetector" totalMilliseconds="154" invocations="2264" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="4454" standardDeviationMicrosecondsPerInvocation="186"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.android.ExternalFileAccessDetector" totalMilliseconds="154" invocations="2264" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="4928" standardDeviationMicrosecondsPerInvocation="185"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.crypto.ErrorMessageExposureDetector" totalMilliseconds="154" invocations="2264" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="4806" standardDeviationMicrosecondsPerInvocation="187"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.ListUsageIssues" totalMilliseconds="153" invocations="2264" avgMicrosecondsPerInvocation="67" maxMicrosecondsPerInvocation="8072" standardDeviationMicrosecondsPerInvocation="243"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.script.SpelViewDetector" totalMilliseconds="153" invocations="2264" avgMicrosecondsPerInvocation="67" maxMicrosecondsPerInvocation="5055" standardDeviationMicrosecondsPerInvocation="183"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.CharsetIssues" totalMilliseconds="152" invocations="2264" avgMicrosecondsPerInvocation="67" maxMicrosecondsPerInvocation="4656" standardDeviationMicrosecondsPerInvocation="187"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.InappropriateToStringUse" totalMilliseconds="152" invocations="2264" avgMicrosecondsPerInvocation="67" maxMicrosecondsPerInvocation="5195" standardDeviationMicrosecondsPerInvocation="177"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.collect.CollectMethodsReturningImmutableCollections" totalMilliseconds="152" invocations="3113" avgMicrosecondsPerInvocation="48" maxMicrosecondsPerInvocation="2832" standardDeviationMicrosecondsPerInvocation="127"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.ldap.LdapEntryPoisoningDetector" totalMilliseconds="151" invocations="2264" avgMicrosecondsPerInvocation="67" maxMicrosecondsPerInvocation="2826" standardDeviationMicrosecondsPerInvocation="158"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.ssrf.SSRFDetector" totalMilliseconds="151" invocations="2264" avgMicrosecondsPerInvocation="67" maxMicrosecondsPerInvocation="3017" standardDeviationMicrosecondsPerInvocation="188"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.smtp.SmtpHeaderInjectionDetector" totalMilliseconds="151" invocations="2264" avgMicrosecondsPerInvocation="67" maxMicrosecondsPerInvocation="9181" standardDeviationMicrosecondsPerInvocation="279"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.SetUsageIssues" totalMilliseconds="151" invocations="2264" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="6842" standardDeviationMicrosecondsPerInvocation="228"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="151" invocations="2264" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="2110" standardDeviationMicrosecondsPerInvocation="92"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SynchronizingOnContentsOfFieldToProtectField" totalMilliseconds="150" invocations="2264" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="4501" standardDeviationMicrosecondsPerInvocation="176"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.ConflictingTimeUnits" totalMilliseconds="150" invocations="2264" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="5005" standardDeviationMicrosecondsPerInvocation="193"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.fileDisclosure.FileDisclosureDetector" totalMilliseconds="149" invocations="2264" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="7094" standardDeviationMicrosecondsPerInvocation="231"/>
+      <ClassProfile name="com.mebigfatguy.fbcontrib.detect.LingeringGraphicsObjects" totalMilliseconds="149" invocations="2264" avgMicrosecondsPerInvocation="65" maxMicrosecondsPerInvocation="4529" standardDeviationMicrosecondsPerInvocation="177"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
