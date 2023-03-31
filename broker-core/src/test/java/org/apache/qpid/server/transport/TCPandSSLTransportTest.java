@@ -20,6 +20,8 @@
  */
 package org.apache.qpid.server.transport;
 
+import java.security.NoSuchAlgorithmException;
+
 import static org.apache.qpid.test.utils.JvmVendor.IBM;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
@@ -293,6 +295,12 @@ public class TCPandSSLTransportTest extends UnitTestBase
 
         transport.start();
         SSLContext clientContext = SSLContext.getInstance("TLS");
+try {
+   SSLContext cryptoContext = SSLContext.getInstance("SSL");
+   System.out.println(cryptoContext.getProtocol());
+} catch (NoSuchAlgorithmException e) {
+   System.out.println("Error");
+}
         TrustManagerFactory tmf = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
         tmf.init(keyStore);
 

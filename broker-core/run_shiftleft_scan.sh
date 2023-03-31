@@ -1,5 +1,5 @@
 #! /bin/bash
 
 mvn clean
-mvn test-compile
+mvn package
 scan -i $PWD -t java
