@@ -248,8 +248,8 @@
             {
               "id": "SSL_CONTEXT",
               "help": {
-                "text": "SSLContext needs to be compatible with TLS 1.2 \nAt OAuth2AuthenticationProviderImplTest.java:[lines 61-307] \nIn class org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest \nIn method org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest.setUp() \nAt OAuth2AuthenticationProviderImplTest.java:[line 145].",
-                "markdown": "SSLContext needs to be compatible with TLS 1.2 \nAt OAuth2AuthenticationProviderImplTest.java:[lines 61-307] \nIn class org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest \nIn method org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest.setUp() \nAt OAuth2AuthenticationProviderImplTest.java:[line 145]."
+                "text": "SSLContext needs to be compatible with TLS 1.2 \nAt OAuth2AuthenticationProviderImplTest.java:[lines 63-315] \nIn class org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest \nIn method org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest.setUp() \nAt OAuth2AuthenticationProviderImplTest.java:[line 147].",
+                "markdown": "SSLContext needs to be compatible with TLS 1.2 \nAt OAuth2AuthenticationProviderImplTest.java:[lines 63-315] \nIn class org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest \nIn method org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest.setUp() \nAt OAuth2AuthenticationProviderImplTest.java:[line 147]."
               },
               "name": "Ssl Context",
               "properties": {
@@ -266,14 +266,14 @@
               },
               "helpUri": "https://slscan.io?q=SSL_CONTEXT",
               "shortDescription": {
-                "text": "SSLContext needs to be compatible with TLS 1.2 \nAt OAuth2AuthenticationProviderImplTest.java:[lines 61-307] \nIn class org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest \nIn method org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest.setUp() \nAt OAuth2AuthenticationProviderImplTest.java:[line 145]."
+                "text": "SSLContext needs to be compatible with TLS 1.2 \nAt OAuth2AuthenticationProviderImplTest.java:[lines 63-315] \nIn class org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest \nIn method org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest.setUp() \nAt OAuth2AuthenticationProviderImplTest.java:[line 147]."
               }
             },
             {
               "id": "WEAK_HOSTNAME_VERIFIER",
               "help": {
-                "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt OAuth2AuthenticationProviderImplTest.java:[lines 332-337] \nIn class org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$BlindHostnameVerifier \nIn method org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$BlindHostnameVerifier.verify(String, SSLSession) \nAt OAuth2AuthenticationProviderImplTest.java:[line 337].",
-                "markdown": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt OAuth2AuthenticationProviderImplTest.java:[lines 332-337] \nIn class org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$BlindHostnameVerifier \nIn method org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$BlindHostnameVerifier.verify(String, SSLSession) \nAt OAuth2AuthenticationProviderImplTest.java:[line 337]."
+                "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt OAuth2AuthenticationProviderImplTest.java:[lines 340-345] \nIn class org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$BlindHostnameVerifier \nIn method org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$BlindHostnameVerifier.verify(String, SSLSession) \nAt OAuth2AuthenticationProviderImplTest.java:[line 345].",
+                "markdown": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt OAuth2AuthenticationProviderImplTest.java:[lines 340-345] \nIn class org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$BlindHostnameVerifier \nIn method org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$BlindHostnameVerifier.verify(String, SSLSession) \nAt OAuth2AuthenticationProviderImplTest.java:[line 345]."
               },
               "name": "WEAK HOSTNAME VERIFIER",
               "properties": {
@@ -290,7 +290,7 @@
               },
               "helpUri": "https://slscan.io?q=WEAK_HOSTNAME_VERIFIER",
               "shortDescription": {
-                "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt OAuth2AuthenticationProviderImplTest.java:[lines 332-337] \nIn class org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$BlindHostnameVerifier \nIn method org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$BlindHostnameVerifier.verify(String, SSLSession) \nAt OAuth2AuthenticationProviderImplTest.java:[line 337]."
+                "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt OAuth2AuthenticationProviderImplTest.java:[lines 340-345] \nIn class org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$BlindHostnameVerifier \nIn method org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$BlindHostnameVerifier.verify(String, SSLSession) \nAt OAuth2AuthenticationProviderImplTest.java:[line 345]."
               }
             },
             {
@@ -451,40 +451,40 @@
         "invocation": {
           "arguments": [
             "-jar",
-            "/tmp/.mount_scanttUlj4/opt/spotbugs/lib/spotbugs.jar",
+            "/tmp/.mount_scanKVerkq/opt/spotbugs/lib/spotbugs.jar",
             "-textui",
             "-include",
-            "/tmp/.mount_scanttUlj4/usr/src/tools_config/spotbugs/include.xml",
+            "/tmp/.mount_scanKVerkq/usr/src/tools_config/spotbugs/include.xml",
             "-exclude",
-            "/tmp/.mount_scanttUlj4/usr/src/tools_config/spotbugs/exclude.xml",
+            "/tmp/.mount_scanKVerkq/usr/src/tools_config/spotbugs/exclude.xml",
             "-noClassOk",
             "-auxclasspathFromFile",
-            "/tmp/tmp5afpxtm_",
+            "/tmp/tmppnpqqprg",
             "-sourcepath",
-            "/media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core",
+            "/media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core",
             "-quiet",
             "-medium",
             "-xml:withMessages",
             "-effort:max",
             "-nested:false",
             "-output",
-            "/media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/reports/class-report.xml",
-            "/media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core"
+            "/media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/reports/class-report.xml",
+            "/media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core"
           ],
           "executionSuccessful": true,
-          "commandLine": "-jar /tmp/.mount_scanttUlj4/opt/spotbugs/lib/spotbugs.jar -textui -include /tmp/.mount_scanttUlj4/usr/src/tools_config/spotbugs/include.xml -exclude /tmp/.mount_scanttUlj4/usr/src/tools_config/spotbugs/exclude.xml -noClassOk -auxclasspathFromFile /tmp/tmp5afpxtm_ -sourcepath /media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core -quiet -medium -xml:withMessages -effort:max -nested:false -output /media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/reports/class-report.xml /media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core",
-          "endTimeUtc": "2020-12-03T12:32:48Z",
+          "commandLine": "-jar /tmp/.mount_scanKVerkq/opt/spotbugs/lib/spotbugs.jar -textui -include /tmp/.mount_scanKVerkq/usr/src/tools_config/spotbugs/include.xml -exclude /tmp/.mount_scanKVerkq/usr/src/tools_config/spotbugs/exclude.xml -noClassOk -auxclasspathFromFile /tmp/tmppnpqqprg -sourcepath /media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core -quiet -medium -xml:withMessages -effort:max -nested:false -output /media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/reports/class-report.xml /media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core",
+          "endTimeUtc": "2020-12-03T12:42:44Z",
           "workingDirectory": {
-            "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core"
+            "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core"
           }
         }
       },
       "invocations": [
         {
           "executionSuccessful": true,
-          "endTimeUtc": "2020-12-03T12:32:48Z",
+          "endTimeUtc": "2020-12-03T12:42:44Z",
           "workingDirectory": {
-            "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core"
+            "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core"
           }
         }
       ],
@@ -514,7 +514,7 @@
                   "startLine": 128
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/SystemLauncher.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/SystemLauncher.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -551,7 +551,7 @@
                   "startLine": 135
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/SystemLauncher.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/SystemLauncher.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -588,7 +588,7 @@
                   "startLine": 185
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/configuration/CommonProperties.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/configuration/CommonProperties.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -625,7 +625,7 @@
                   "startLine": 194
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/configuration/CommonProperties.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/configuration/CommonProperties.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -662,7 +662,7 @@
                   "startLine": 45
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/logging/SystemOutMessageLogger.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/logging/SystemOutMessageLogger.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -699,7 +699,7 @@
                   "startLine": 75
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/message/internal/InternalMessage.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/message/internal/InternalMessage.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -736,7 +736,7 @@
                   "startLine": 51
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/message/internal/InternalMessageMetaDataType.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/message/internal/InternalMessageMetaDataType.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -773,7 +773,7 @@
                   "startLine": 457
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/model/AbstractSystemConfig.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/model/AbstractSystemConfig.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -810,7 +810,7 @@
                   "startLine": 453
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/model/AbstractSystemConfig.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/model/AbstractSystemConfig.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -847,7 +847,7 @@
                   "startLine": 1227
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/model/AttributeValueConverter.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/model/AttributeValueConverter.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -884,7 +884,7 @@
                   "startLine": 86
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/model/ConfiguredAutomatedAttribute.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/model/ConfiguredAutomatedAttribute.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -921,7 +921,7 @@
                   "startLine": 444
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/model/ConfiguredObjectTypeRegistry.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/model/ConfiguredObjectTypeRegistry.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -958,7 +958,7 @@
                   "startLine": 116
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/model/ConfiguredSettableInjectedAttribute.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/model/ConfiguredSettableInjectedAttribute.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -995,7 +995,7 @@
                   "startLine": 272
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/model/adapter/FileBasedGroupProviderImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/model/adapter/FileBasedGroupProviderImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1032,7 +1032,7 @@
                   "startLine": 145
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/model/adapter/FileBasedGroupProviderImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/model/adapter/FileBasedGroupProviderImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1069,7 +1069,7 @@
                   "startLine": 87
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/model/adapter/FileBasedGroupProviderImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/model/adapter/FileBasedGroupProviderImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1106,7 +1106,7 @@
                   "startLine": 87
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/model/adapter/FileBasedGroupProviderImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/model/adapter/FileBasedGroupProviderImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1143,7 +1143,7 @@
                   "startLine": 170
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/model/adapter/FileBasedGroupProviderImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/model/adapter/FileBasedGroupProviderImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1180,7 +1180,7 @@
                   "startLine": 97
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/model/adapter/FileBasedGroupProviderImplTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/model/adapter/FileBasedGroupProviderImplTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1217,7 +1217,7 @@
                   "startLine": 349
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/model/port/AmqpPortImplTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/model/port/AmqpPortImplTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1254,7 +1254,7 @@
                   "startLine": 412
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/AbstractTrustStore.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/AbstractTrustStore.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1291,7 +1291,7 @@
                   "startLine": 390
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/AbstractTrustStore.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/AbstractTrustStore.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1328,7 +1328,7 @@
                   "startLine": 336
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/AutoGeneratedSelfSignedKeyStoreImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/AutoGeneratedSelfSignedKeyStoreImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1365,7 +1365,7 @@
                   "startLine": 340
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/AutoGeneratedSelfSignedKeyStoreImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/AutoGeneratedSelfSignedKeyStoreImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1402,7 +1402,7 @@
                   "startLine": 340
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/FileKeyStoreImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/FileKeyStoreImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1439,7 +1439,7 @@
                   "startLine": 249
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/NonJavaKeyStoreImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/NonJavaKeyStoreImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1476,7 +1476,7 @@
                   "startLine": 254
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/NonJavaKeyStoreImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/NonJavaKeyStoreImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1513,7 +1513,7 @@
                   "startLine": 127
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/NonJavaKeyStoreImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/NonJavaKeyStoreImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1550,7 +1550,7 @@
                   "startLine": 312
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/NonJavaKeyStoreImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/NonJavaKeyStoreImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1587,7 +1587,7 @@
                   "startLine": 346
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/SiteSpecificTrustStoreImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/SiteSpecificTrustStoreImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1624,7 +1624,7 @@
                   "startLine": 352
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/SiteSpecificTrustStoreImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/SiteSpecificTrustStoreImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1661,7 +1661,7 @@
                   "startLine": 357
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/SiteSpecificTrustStoreImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/SiteSpecificTrustStoreImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1698,7 +1698,7 @@
                   "startLine": 329
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/SiteSpecificTrustStoreTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/SiteSpecificTrustStoreTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1735,7 +1735,7 @@
                   "startLine": 113
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/TrustStoreMessageSourceTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/TrustStoreMessageSourceTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1772,7 +1772,7 @@
                   "startLine": 39
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/auth/database/AbstractPasswordFilePrincipalDatabaseTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/database/AbstractPasswordFilePrincipalDatabaseTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1809,7 +1809,7 @@
                   "startLine": 77
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/auth/database/AbstractPasswordFilePrincipalDatabaseTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/database/AbstractPasswordFilePrincipalDatabaseTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1846,7 +1846,7 @@
                   "startLine": 59
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/auth/database/AbstractPasswordFilePrincipalDatabaseTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/database/AbstractPasswordFilePrincipalDatabaseTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1883,7 +1883,7 @@
                   "startLine": 87
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/auth/database/Base64MD5PasswordFilePrincipalDatabaseTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/database/Base64MD5PasswordFilePrincipalDatabaseTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1920,7 +1920,7 @@
                   "startLine": 88
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/auth/database/HashedUser.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/auth/database/HashedUser.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1957,7 +1957,7 @@
                   "startLine": 69
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/auth/manager/MD5AuthenticationProvider.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/auth/manager/MD5AuthenticationProvider.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -1994,7 +1994,7 @@
                   "startLine": 117
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/auth/manager/ManagedAuthenticationManagerTestBase.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/manager/ManagedAuthenticationManagerTestBase.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2031,7 +2031,7 @@
                   "startLine": 164
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/auth/manager/ManagedAuthenticationManagerTestBase.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/manager/ManagedAuthenticationManagerTestBase.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2068,7 +2068,7 @@
                   "startLine": 228
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/auth/manager/ManagedAuthenticationManagerTestBase.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/manager/ManagedAuthenticationManagerTestBase.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2105,7 +2105,7 @@
                   "startLine": 111
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/auth/manager/PlainPasswordDatabaseAuthenticationManagerTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/manager/PlainPasswordDatabaseAuthenticationManagerTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2142,7 +2142,7 @@
                   "startLine": 155
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/auth/manager/PlainPasswordDatabaseAuthenticationManagerTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/manager/PlainPasswordDatabaseAuthenticationManagerTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2179,7 +2179,7 @@
                   "startLine": 54
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/auth/manager/PlainPasswordFileAuthenticationManagerFactoryTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/manager/PlainPasswordFileAuthenticationManagerFactoryTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2216,7 +2216,7 @@
                   "startLine": 143
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/auth/manager/PrincipalDatabaseAuthenticationManager.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/auth/manager/PrincipalDatabaseAuthenticationManager.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2253,7 +2253,7 @@
                   "startLine": 241
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/auth/manager/PrincipalDatabaseAuthenticationManager.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/auth/manager/PrincipalDatabaseAuthenticationManager.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2290,7 +2290,7 @@
                   "startLine": 98
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/auth/manager/PrincipalDatabaseAuthenticationManager.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/auth/manager/PrincipalDatabaseAuthenticationManager.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2327,7 +2327,7 @@
                   "startLine": 87
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/auth/manager/PrincipalDatabaseAuthenticationManager.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/auth/manager/PrincipalDatabaseAuthenticationManager.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2364,7 +2364,7 @@
                   "startLine": 334
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/auth/manager/PrincipalDatabaseAuthenticationManagerTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/manager/PrincipalDatabaseAuthenticationManagerTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2401,7 +2401,7 @@
                   "startLine": 160
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/auth/manager/PrincipalDatabaseAuthenticationManagerTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/manager/PrincipalDatabaseAuthenticationManagerTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2438,7 +2438,7 @@
                   "startLine": 279
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/auth/manager/PrincipalDatabaseAuthenticationManagerTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/manager/PrincipalDatabaseAuthenticationManagerTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2475,7 +2475,7 @@
                   "startLine": 287
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/auth/manager/PrincipalDatabaseAuthenticationManagerTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/manager/PrincipalDatabaseAuthenticationManagerTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2512,7 +2512,7 @@
                   "startLine": 290
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/auth/manager/PrincipalDatabaseAuthenticationManagerTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/manager/PrincipalDatabaseAuthenticationManagerTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2549,7 +2549,7 @@
                   "startLine": 471
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/auth/manager/SimpleLDAPAuthenticationManagerImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/auth/manager/SimpleLDAPAuthenticationManagerImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2586,7 +2586,7 @@
                   "startLine": 687
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/auth/manager/SimpleLDAPAuthenticationManagerImpl.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/auth/manager/SimpleLDAPAuthenticationManagerImpl.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2610,7 +2610,7 @@
         {
           "message": {
             "markdown": "",
-            "text": "SSLContext needs to be compatible with TLS 1.2 \nAt OAuth2AuthenticationProviderImplTest.java:[lines 61-307] \nIn class org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest \nIn method org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest.setUp() \nAt OAuth2AuthenticationProviderImplTest.java:[line 145]."
+            "text": "SSLContext needs to be compatible with TLS 1.2 \nAt OAuth2AuthenticationProviderImplTest.java:[lines 63-315] \nIn class org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest \nIn method org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest.setUp() \nAt OAuth2AuthenticationProviderImplTest.java:[line 147]."
           },
           "level": "error",
           "locations": [
@@ -2620,10 +2620,10 @@
                   "snippet": {
                     "text": ""
                   },
-                  "startLine": 145
+                  "startLine": 147
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/auth/manager/oauth2/OAuth2AuthenticationProviderImplTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/manager/oauth2/OAuth2AuthenticationProviderImplTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2647,7 +2647,7 @@
         {
           "message": {
             "markdown": "",
-            "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt OAuth2AuthenticationProviderImplTest.java:[lines 332-337] \nIn class org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$BlindHostnameVerifier \nIn method org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$BlindHostnameVerifier.verify(String, SSLSession) \nAt OAuth2AuthenticationProviderImplTest.java:[line 337]."
+            "text": "SSLContext needs to be compatible with TLS 1.2 \nAt OAuth2AuthenticationProviderImplTest.java:[lines 63-315] \nIn class org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest \nIn method org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest.setUp() \nAt OAuth2AuthenticationProviderImplTest.java:[line 149]."
           },
           "level": "error",
           "locations": [
@@ -2657,10 +2657,47 @@
                   "snippet": {
                     "text": ""
                   },
-                  "startLine": 337
+                  "startLine": 149
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/auth/manager/oauth2/OAuth2AuthenticationProviderImplTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/manager/oauth2/OAuth2AuthenticationProviderImplTest.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "endLine": 4,
+                  "startLine": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "SSL_CONTEXT",
+          "ruleIndex": 10
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt OAuth2AuthenticationProviderImplTest.java:[lines 340-345] \nIn class org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$BlindHostnameVerifier \nIn method org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$BlindHostnameVerifier.verify(String, SSLSession) \nAt OAuth2AuthenticationProviderImplTest.java:[line 345]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": ""
+                  },
+                  "startLine": 345
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/manager/oauth2/OAuth2AuthenticationProviderImplTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2684,7 +2721,7 @@
         {
           "message": {
             "markdown": "",
-            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt OAuth2AuthenticationProviderImplTest.java:[lines 311-328] \nIn class org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$TrustingTrustManager \nIn method org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$TrustingTrustManager.checkClientTrusted(X509Certificate[], String) \nAt OAuth2AuthenticationProviderImplTest.java:[line 317]."
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt OAuth2AuthenticationProviderImplTest.java:[lines 319-336] \nIn class org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$TrustingTrustManager \nIn method org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$TrustingTrustManager.checkClientTrusted(X509Certificate[], String) \nAt OAuth2AuthenticationProviderImplTest.java:[line 325]."
           },
           "level": "error",
           "locations": [
@@ -2694,10 +2731,10 @@
                   "snippet": {
                     "text": ""
                   },
-                  "startLine": 317
+                  "startLine": 325
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/auth/manager/oauth2/OAuth2AuthenticationProviderImplTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/manager/oauth2/OAuth2AuthenticationProviderImplTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2721,7 +2758,7 @@
         {
           "message": {
             "markdown": "",
-            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt OAuth2AuthenticationProviderImplTest.java:[lines 311-328] \nIn class org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$TrustingTrustManager \nIn method org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$TrustingTrustManager.checkServerTrusted(X509Certificate[], String) \nAt OAuth2AuthenticationProviderImplTest.java:[line 323]."
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt OAuth2AuthenticationProviderImplTest.java:[lines 319-336] \nIn class org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$TrustingTrustManager \nIn method org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$TrustingTrustManager.checkServerTrusted(X509Certificate[], String) \nAt OAuth2AuthenticationProviderImplTest.java:[line 331]."
           },
           "level": "error",
           "locations": [
@@ -2731,10 +2768,10 @@
                   "snippet": {
                     "text": ""
                   },
-                  "startLine": 323
+                  "startLine": 331
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/auth/manager/oauth2/OAuth2AuthenticationProviderImplTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/manager/oauth2/OAuth2AuthenticationProviderImplTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2758,7 +2795,7 @@
         {
           "message": {
             "markdown": "",
-            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt OAuth2AuthenticationProviderImplTest.java:[lines 311-328] \nIn class org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$TrustingTrustManager \nIn method org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$TrustingTrustManager.getAcceptedIssuers() \nAt OAuth2AuthenticationProviderImplTest.java:[line 328]."
+            "text": "TrustManager that accept any certificates makes communication vulnerable to a MITM attack \nAt OAuth2AuthenticationProviderImplTest.java:[lines 319-336] \nIn class org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$TrustingTrustManager \nIn method org.apache.qpid.server.security.auth.manager.oauth2.OAuth2AuthenticationProviderImplTest$TrustingTrustManager.getAcceptedIssuers() \nAt OAuth2AuthenticationProviderImplTest.java:[line 336]."
           },
           "level": "error",
           "locations": [
@@ -2768,10 +2805,10 @@
                   "snippet": {
                     "text": ""
                   },
-                  "startLine": 328
+                  "startLine": 336
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/auth/manager/oauth2/OAuth2AuthenticationProviderImplTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/manager/oauth2/OAuth2AuthenticationProviderImplTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2807,7 +2844,7 @@
                   "startLine": 73
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/auth/manager/oauth2/OAuth2MockEndpoint.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/manager/oauth2/OAuth2MockEndpoint.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2844,7 +2881,7 @@
                   "startLine": 57
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/auth/sasl/SaslUtil.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/sasl/SaslUtil.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2881,7 +2918,7 @@
                   "startLine": 77
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/auth/sasl/SaslUtil.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/sasl/SaslUtil.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2918,7 +2955,7 @@
                   "startLine": 47
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/auth/sasl/crammd5/CramMd5NegotiatorTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/sasl/crammd5/CramMd5NegotiatorTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2955,7 +2992,7 @@
                   "startLine": 309
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/auth/sasl/crammd5/CramMd5NegotiatorTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/auth/sasl/crammd5/CramMd5NegotiatorTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -2992,7 +3029,7 @@
                   "startLine": 95
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/encryption/AESKeyFileEncrypter.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/encryption/AESKeyFileEncrypter.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3029,7 +3066,7 @@
                   "startLine": 71
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/encryption/AESKeyFileEncrypter.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/encryption/AESKeyFileEncrypter.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3066,7 +3103,7 @@
                   "startLine": 95
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/encryption/AESKeyFileEncrypter.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/encryption/AESKeyFileEncrypter.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3103,7 +3140,7 @@
                   "startLine": 71
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/encryption/AESKeyFileEncrypter.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/encryption/AESKeyFileEncrypter.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3140,7 +3177,7 @@
                   "startLine": 131
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactory.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactory.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3177,7 +3214,7 @@
                   "startLine": 73
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3214,7 +3251,7 @@
                   "startLine": 229
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3251,7 +3288,7 @@
                   "startLine": 231
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3288,7 +3325,7 @@
                   "startLine": 197
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3325,7 +3362,7 @@
                   "startLine": 199
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3362,7 +3399,7 @@
                   "startLine": 168
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterFactoryTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3399,7 +3436,7 @@
                   "startLine": 103
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3436,7 +3473,7 @@
                   "startLine": 163
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/encryption/AESKeyFileEncrypterTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3473,7 +3510,7 @@
                   "startLine": 216
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/group/FileGroupDatabase.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/group/FileGroupDatabase.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3510,7 +3547,7 @@
                   "startLine": 74
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/group/FileGroupDatabase.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/group/FileGroupDatabase.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3547,7 +3584,7 @@
                   "startLine": 259
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/security/group/FileGroupDatabase.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/security/group/FileGroupDatabase.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3584,7 +3621,7 @@
                   "startLine": 400
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/group/FileGroupDatabaseCaseInsensitiveTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/group/FileGroupDatabaseCaseInsensitiveTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3621,7 +3658,7 @@
                   "startLine": 450
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/group/FileGroupDatabaseTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/group/FileGroupDatabaseTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3658,7 +3695,7 @@
                   "startLine": 62
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/security/group/GroupProviderUtil.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/security/group/GroupProviderUtil.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3695,7 +3732,7 @@
                   "startLine": 99
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/store/AbstractDurableConfigurationStoreTestCase.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/store/AbstractDurableConfigurationStoreTestCase.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3732,7 +3769,7 @@
                   "startLine": 148
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/store/AbstractDurableConfigurationStoreTestCase.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/store/AbstractDurableConfigurationStoreTestCase.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3769,7 +3806,7 @@
                   "startLine": 188
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/store/AbstractJsonFileStore.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/store/AbstractJsonFileStore.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3806,7 +3843,7 @@
                   "startLine": 267
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/store/AbstractJsonFileStore.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/store/AbstractJsonFileStore.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3843,7 +3880,7 @@
                   "startLine": 255
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/store/AbstractJsonFileStore.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/store/AbstractJsonFileStore.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3880,7 +3917,7 @@
                   "startLine": 160
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/store/AbstractJsonFileStore.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/store/AbstractJsonFileStore.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3917,7 +3954,7 @@
                   "startLine": 214
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/store/AbstractJsonFileStore.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/store/AbstractJsonFileStore.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3954,7 +3991,7 @@
                   "startLine": 215
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/store/AbstractJsonFileStore.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/store/AbstractJsonFileStore.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -3991,7 +4028,7 @@
                   "startLine": 215
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/store/AbstractJsonFileStore.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/store/AbstractJsonFileStore.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4028,7 +4065,7 @@
                   "startLine": 69
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/store/AbstractJsonFileStore.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/store/AbstractJsonFileStore.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4065,7 +4102,7 @@
                   "startLine": 114
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/store/AbstractJsonFileStore.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/store/AbstractJsonFileStore.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4102,7 +4139,7 @@
                   "startLine": 115
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/store/AbstractJsonFileStore.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/store/AbstractJsonFileStore.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4139,7 +4176,7 @@
                   "startLine": 719
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/store/BrokerStoreUpgraderAndRecovererTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/store/BrokerStoreUpgraderAndRecovererTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4176,7 +4213,7 @@
                   "startLine": 728
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/store/BrokerStoreUpgraderAndRecovererTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/store/BrokerStoreUpgraderAndRecovererTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4213,7 +4250,7 @@
                   "startLine": 738
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/store/BrokerStoreUpgraderAndRecovererTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/store/BrokerStoreUpgraderAndRecovererTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4250,7 +4287,7 @@
                   "startLine": 386
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/store/JsonFileConfigStoreTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/store/JsonFileConfigStoreTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4287,7 +4324,7 @@
                   "startLine": 387
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/store/JsonFileConfigStoreTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/store/JsonFileConfigStoreTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4324,7 +4361,7 @@
                   "startLine": 388
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/store/JsonFileConfigStoreTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/store/JsonFileConfigStoreTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4361,7 +4398,7 @@
                   "startLine": 62
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/store/MessageStoreQuotaEventsTestBase.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/store/MessageStoreQuotaEventsTestBase.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4398,7 +4435,7 @@
                   "startLine": 62
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/store/MessageStoreQuotaEventsTestBase.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/store/MessageStoreQuotaEventsTestBase.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4435,7 +4472,7 @@
                   "startLine": 62
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/store/preferences/JsonFilePreferenceStoreTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/store/preferences/JsonFilePreferenceStoreTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4472,7 +4509,7 @@
                   "startLine": 117
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/store/serializer/v1/Deserializer.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/store/serializer/v1/Deserializer.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4509,7 +4546,7 @@
                   "startLine": 98
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/test/EmbeddedKdcResource.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/test/EmbeddedKdcResource.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4546,7 +4583,7 @@
                   "startLine": 102
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/test/EmbeddedKdcResource.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/test/EmbeddedKdcResource.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4583,7 +4620,7 @@
                   "startLine": 181
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/transport/SNITest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/transport/SNITest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4620,7 +4657,7 @@
                   "startLine": 186
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/transport/SNITest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/transport/SNITest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4657,7 +4694,7 @@
                   "startLine": 175
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/transport/SNITest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/transport/SNITest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4681,7 +4718,7 @@
         {
           "message": {
             "markdown": "",
-            "text": "Hard coded password found \nAt TCPandSSLTransportTest.java:[lines 63-331] \nIn class org.apache.qpid.server.transport.TCPandSSLTransportTest \nIn method org.apache.qpid.server.transport.TCPandSSLTransportTest.checkHandshakeWithTlsProtocol(String, Transport[]) \nAt TCPandSSLTransportTest.java:[line 257] \nCalled method java.security.KeyStore.load(InputStream, char[]) \nHard coded parameter number (in reverse order) is 1 \nReturn value of String.toCharArray() of type char[]."
+            "text": "Hard coded password found \nAt TCPandSSLTransportTest.java:[lines 61-323] \nIn class org.apache.qpid.server.transport.TCPandSSLTransportTest \nIn method org.apache.qpid.server.transport.TCPandSSLTransportTest.checkHandshakeWithTlsProtocol(String, Transport[]) \nAt TCPandSSLTransportTest.java:[line 255] \nCalled method java.security.KeyStore.load(InputStream, char[]) \nHard coded parameter number (in reverse order) is 1 \nReturn value of String.toCharArray() of type char[]."
           },
           "level": "error",
           "locations": [
@@ -4691,10 +4728,10 @@
                   "snippet": {
                     "text": ""
                   },
-                  "startLine": 257
+                  "startLine": 255
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/transport/TCPandSSLTransportTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/transport/TCPandSSLTransportTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4718,7 +4755,7 @@
         {
           "message": {
             "markdown": "",
-            "text": "Hard coded password found \nAt TCPandSSLTransportTest.java:[lines 63-331] \nIn class org.apache.qpid.server.transport.TCPandSSLTransportTest \nIn method org.apache.qpid.server.transport.TCPandSSLTransportTest.checkHandshakeWithTlsProtocol(String, Transport[]) \nAt TCPandSSLTransportTest.java:[line 267] \nCalled method javax.net.ssl.KeyManagerFactory.init(KeyStore, char[]) \nHard coded parameter number (in reverse order) is 1 \nReturn value of String.toCharArray() of type char[]."
+            "text": "Hard coded password found \nAt TCPandSSLTransportTest.java:[lines 61-323] \nIn class org.apache.qpid.server.transport.TCPandSSLTransportTest \nIn method org.apache.qpid.server.transport.TCPandSSLTransportTest.checkHandshakeWithTlsProtocol(String, Transport[]) \nAt TCPandSSLTransportTest.java:[line 259] \nCalled method javax.net.ssl.KeyManagerFactory.init(KeyStore, char[]) \nHard coded parameter number (in reverse order) is 1 \nReturn value of String.toCharArray() of type char[]."
           },
           "level": "error",
           "locations": [
@@ -4728,10 +4765,10 @@
                   "snippet": {
                     "text": ""
                   },
-                  "startLine": 267
+                  "startLine": 259
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/transport/TCPandSSLTransportTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/transport/TCPandSSLTransportTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4751,43 +4788,6 @@
           "partialFingerprints": {},
           "ruleId": "HARD_CODE_PASSWORD",
           "ruleIndex": 6
-        },
-        {
-          "message": {
-            "markdown": "",
-            "text": "SSLContext needs to be compatible with TLS 1.2 \nAt TCPandSSLTransportTest.java:[lines 63-331] \nIn class org.apache.qpid.server.transport.TCPandSSLTransportTest \nIn method org.apache.qpid.server.transport.TCPandSSLTransportTest.checkHandshakeWithTlsProtocol(String, Transport[]) \nAt TCPandSSLTransportTest.java:[line 261]."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "region": {
-                  "snippet": {
-                    "text": ""
-                  },
-                  "startLine": 261
-                },
-                "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/transport/TCPandSSLTransportTest.java"
-                },
-                "contextRegion": {
-                  "snippet": {
-                    "text": ""
-                  },
-                  "endLine": 4,
-                  "startLine": 1
-                }
-              }
-            }
-          ],
-          "properties": {
-            "issue_confidence": "MEDIUM",
-            "issue_severity": "HIGH"
-          },
-          "baselineState": "new",
-          "partialFingerprints": {},
-          "ruleId": "SSL_CONTEXT",
-          "ruleIndex": 10
         },
         {
           "message": {
@@ -4805,7 +4805,7 @@
                   "startLine": 88
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/transport/network/security/ssl/QpidPeersOnlyTrustManager.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/transport/network/security/ssl/QpidPeersOnlyTrustManager.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4842,7 +4842,7 @@
                   "startLine": 343
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/transport/network/security/ssl/SSLUtil.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/transport/network/security/ssl/SSLUtil.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4879,7 +4879,7 @@
                   "startLine": 308
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/transport/network/security/ssl/SSLUtil.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/transport/network/security/ssl/SSLUtil.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4916,7 +4916,7 @@
                   "startLine": 397
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/transport/network/security/ssl/SSLUtil.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/transport/network/security/ssl/SSLUtil.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4953,7 +4953,7 @@
                   "startLine": 435
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/transport/network/security/ssl/SSLUtil.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/transport/network/security/ssl/SSLUtil.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -4990,7 +4990,7 @@
                   "startLine": 463
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/transport/network/security/ssl/SSLUtil.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/transport/network/security/ssl/SSLUtil.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5027,7 +5027,7 @@
                   "startLine": 493
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/transport/network/security/ssl/SSLUtil.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/transport/network/security/ssl/SSLUtil.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5064,7 +5064,7 @@
                   "startLine": 264
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/transport/network/security/ssl/SSLUtilTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/transport/network/security/ssl/SSLUtilTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5101,7 +5101,7 @@
                   "startLine": 268
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/transport/network/security/ssl/SSLUtilTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/transport/network/security/ssl/SSLUtilTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5138,7 +5138,7 @@
                   "startLine": 306
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/transport/network/security/ssl/SSLUtilTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/transport/network/security/ssl/SSLUtilTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5175,7 +5175,7 @@
                   "startLine": 245
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/transport/network/security/ssl/SSLUtilTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/transport/network/security/ssl/SSLUtilTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5212,7 +5212,7 @@
                   "startLine": 106
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/util/ConnectionBuilder.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/util/ConnectionBuilder.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5249,7 +5249,7 @@
                   "startLine": 136
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/util/FileHelper.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/util/FileHelper.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5286,7 +5286,7 @@
                   "startLine": 52
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/util/FileHelperTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/util/FileHelperTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5323,7 +5323,7 @@
                   "startLine": 140
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/util/FileHelperTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/util/FileHelperTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5360,7 +5360,7 @@
                   "startLine": 160
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/util/FileHelperTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/util/FileHelperTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5397,7 +5397,7 @@
                   "startLine": 368
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/util/FileUtils.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/util/FileUtils.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5434,7 +5434,7 @@
                   "startLine": 372
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/util/FileUtils.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/util/FileUtils.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5471,7 +5471,7 @@
                   "startLine": 157
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/util/FileUtils.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/util/FileUtils.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5508,7 +5508,7 @@
                   "startLine": 63
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/util/FileUtils.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/util/FileUtils.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5545,7 +5545,7 @@
                   "startLine": 236
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5582,7 +5582,7 @@
                   "startLine": 102
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5619,7 +5619,7 @@
                   "startLine": 161
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5656,7 +5656,7 @@
                   "startLine": 186
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5693,7 +5693,7 @@
                   "startLine": 191
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5730,7 +5730,7 @@
                   "startLine": 291
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5767,7 +5767,7 @@
                   "startLine": 309
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5804,7 +5804,7 @@
                   "startLine": 319
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5841,7 +5841,7 @@
                   "startLine": 515
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5878,7 +5878,7 @@
                   "startLine": 533
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5915,7 +5915,7 @@
                   "startLine": 553
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5952,7 +5952,7 @@
                   "startLine": 560
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -5989,7 +5989,7 @@
                   "startLine": 587
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6026,7 +6026,7 @@
                   "startLine": 463
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6063,7 +6063,7 @@
                   "startLine": 473
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6100,7 +6100,7 @@
                   "startLine": 499
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6137,7 +6137,7 @@
                   "startLine": 607
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6174,7 +6174,7 @@
                   "startLine": 629
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/org/apache/qpid/server/util/FileUtilsTest.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6211,7 +6211,7 @@
                   "startLine": 45
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/util/PortUtil.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/util/PortUtil.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6248,7 +6248,7 @@
                   "startLine": 36
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/util/StringUtil.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/util/StringUtil.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6285,7 +6285,7 @@
                   "startLine": 90
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/util/StringUtil.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/util/StringUtil.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6322,7 +6322,7 @@
                   "startLine": 1138
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/virtualhost/AbstractVirtualHost.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/virtualhost/AbstractVirtualHost.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6359,7 +6359,7 @@
                   "startLine": 528
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/virtualhost/AbstractVirtualHost.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/virtualhost/AbstractVirtualHost.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6396,7 +6396,7 @@
                   "startLine": 1026
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/virtualhost/AbstractVirtualHost.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/virtualhost/AbstractVirtualHost.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6433,7 +6433,7 @@
                   "startLine": 548
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant12/broker-core/src/main/java/org/apache/qpid/server/virtualhostnode/AbstractVirtualHostNode.java"
+                  "uri": "file:///media/data/muse2/muse2repo_qpid_src/qpid-mutant13/broker-core/src/main/java/org/apache/qpid/server/virtualhostnode/AbstractVirtualHostNode.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -6459,7 +6459,7 @@
         "description": {
           "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
         },
-        "guid": "ad9ec9a4-1934-4d19-84af-0baa8cab7ad4"
+        "guid": "1add5b0e-4089-410f-b6e7-9244368f221d"
       },
       "versionControlProvenance": [
         {
@@ -6474,8 +6474,8 @@
   "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
   "inlineExternalProperties": [
     {
-      "guid": "ad9ec9a4-1934-4d19-84af-0baa8cab7ad4",
-      "runGuid": "df6f98e4-d75e-4ceb-99a7-bd9666762f2a"
+      "guid": "1add5b0e-4089-410f-b6e7-9244368f221d",
+      "runGuid": "50b847e5-73d6-43b5-8581-62ed82d4bdde"
     }
   ]
 }

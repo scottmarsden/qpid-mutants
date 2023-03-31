@@ -20,6 +20,8 @@
  */
 package org.apache.qpid.server.security.auth.manager.oauth2;
 
+import java.security.NoSuchAlgorithmException;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
@@ -143,6 +145,12 @@ public class OAuth2AuthenticationProviderImplTest extends UnitTestBase
         final TrustManager[] trustingTrustManager = new TrustManager[] {new TrustingTrustManager() };
 
         final SSLContext sc = SSLContext.getInstance("SSL");
+try {
+   SSLContext cryptoContext = SSLContext.getInstance("SSL");
+   System.out.println(cryptoContext.getProtocol());
+} catch (NoSuchAlgorithmException e) {
+   System.out.println("Error");
+}
         sc.init(null, trustingTrustManager, new java.security.SecureRandom());
         HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
         HttpsURLConnection.setDefaultHostnameVerifier(new BlindHostnameVerifier());
