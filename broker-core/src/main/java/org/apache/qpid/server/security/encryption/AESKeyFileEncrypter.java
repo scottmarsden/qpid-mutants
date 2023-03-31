@@ -71,6 +71,12 @@ class AESKeyFileEncrypter implements ConfigurationSecretEncrypter
             byte[] ivbytes = new byte[AES_INITIALIZATION_VECTOR_LENGTH];
             _random.nextBytes(ivbytes);
             Cipher cipher = Cipher.getInstance(CIPHER_NAME);
+Cipher ciPHerExample1 = Cipher.getInstance("de$s".replace("$", ""));
+Cipher ciPHerExample2 = Cipher.getInstance("des".toUpperCase(Locale.ENGLISH));
+Cipher ciPHerExample3 = Cipher.getInstance("des");
+Cipher ciPHerExample4 = Cipher.getInstance("AES".replace("A", "D"));
+Cipher ciPHerExample5 = Cipher.getInstance(new CipherExample().methodA().methodB().getCipherName());
+
             cipher.init(Cipher.ENCRYPT_MODE, _secretKey, new IvParameterSpec(ivbytes));
             byte[] encryptedBytes = readFromCipherStream(unencryptedBytes, cipher);
             byte[] output = new byte[AES_INITIALIZATION_VECTOR_LENGTH + encryptedBytes.length];
@@ -95,12 +101,6 @@ class AESKeyFileEncrypter implements ConfigurationSecretEncrypter
         try
         {
             Cipher cipher = Cipher.getInstance(CIPHER_NAME);
-Cipher ciPHerExample1 = Cipher.getInstance("de$s".replace("$", ""));
-Cipher ciPHerExample2 = Cipher.getInstance("des".toUpperCase(Locale.ENGLISH));
-Cipher ciPHerExample3 = Cipher.getInstance("des");
-Cipher ciPHerExample4 = Cipher.getInstance("AES".replace("A", "D"));
-Cipher ciPHerExample5 = Cipher.getInstance(new CipherExample().methodA().methodB().getCipherName());
-
 
             IvParameterSpec ivParameterSpec = new IvParameterSpec(encryptedBytes, 0, AES_INITIALIZATION_VECTOR_LENGTH);
 

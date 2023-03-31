@@ -23,8 +23,8 @@ org.apache.qpid.server.logging.logback.VirtualHostFileLoggerImplFactory
 org.apache.qpid.server.logging.logback.VirtualHostUserOrConnectionLogInclusionRuleImplFactory
 org.apache.qpid.server.logging.logback.BrokerMemoryLoggerImplFactory
 org.apache.qpid.server.logging.logback.VirtualHostSyslogLoggerImplFactory
-org.apache.qpid.server.logging.logback.BrokerSyslogLoggerImplFactory
 org.apache.qpid.server.logging.logback.BrokerFileLoggerImplFactory
+org.apache.qpid.server.logging.logback.BrokerSyslogLoggerImplFactory
 org.apache.qpid.server.logging.logback.BrokerNameAndLevelLogInclusionRuleImplFactory
-org.apache.qpid.server.logging.logback.BrokerConsoleLoggerImplFactory
 org.apache.qpid.server.logging.logback.VirtualHostNameAndLevelLogInclusionRuleImplFactory
+org.apache.qpid.server.logging.logback.BrokerConsoleLoggerImplFactory
