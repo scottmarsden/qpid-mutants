@@ -35,13 +35,13 @@ public class ConfiguredObjectRegistrationImpl implements ConfiguredObjectRegistr
     public ConfiguredObjectRegistrationImpl()
     {
         Set<Class<? extends ConfiguredObject>> implementations = new HashSet<>();
-        if(!Boolean.getBoolean("qpid.type.disabled:groupmember.ManagedGroupMember"))
-        {
-             implementations.add(GroupMemberImpl.class);
-        }
         if(!Boolean.getBoolean("qpid.type.disabled:groupprovider.ManagedGroupProvider"))
         {
              implementations.add(GroupProviderImpl.class);
+        }
+        if(!Boolean.getBoolean("qpid.type.disabled:groupmember.ManagedGroupMember"))
+        {
+             implementations.add(GroupMemberImpl.class);
         }
         if(!Boolean.getBoolean("qpid.type.disabled:group.ManagedGroup"))
         {

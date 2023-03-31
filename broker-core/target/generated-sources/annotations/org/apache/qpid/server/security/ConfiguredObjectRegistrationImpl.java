@@ -40,11 +40,11 @@ public class ConfiguredObjectRegistrationImpl implements ConfiguredObjectRegistr
              implementations.add(SiteSpecificTrustStore.class);
         }
         implementations.add(NonJavaTrustStoreImpl.class);
-        implementations.add(NonJavaKeyStoreImpl.class);
         if(!Boolean.getBoolean("qpid.type.disabled:accesscontrolprovider.AllowAll"))
         {
              implementations.add(AllowAllAccessControlProvider.class);
         }
+        implementations.add(NonJavaKeyStoreImpl.class);
         if(!Boolean.getBoolean("qpid.type.disabled:truststore.NonJavaTrustStore"))
         {
              implementations.add(NonJavaTrustStore.class);

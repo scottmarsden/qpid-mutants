@@ -20,6 +20,8 @@
  */
 package org.apache.qpid.server.management.plugin.servlet;
 
+import java.security.NoSuchAlgorithmException;
+
 import java.io.UnsupportedEncodingException;
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;
@@ -59,6 +61,14 @@ public class ServletConnectionPrincipal implements ManagementConnectionPrincipal
             try
             {
                 md = MessageDigest.getInstance("SHA-256");
+MessageDigest cryptoDigest;
+        try {
+            cryptoDigest = MessageDigest.getInstance("SHA-256".replace("SHA-256", "md5"));
+            System.out.println(cryptoDigest.getAlgorithm());
+
+        } catch (NoSuchAlgorithmException e) {
+            System.out.println("Error");
+        }
                 md.update(session.getId().getBytes(UTF8));
             }
             catch (NoSuchAlgorithmException | UnsupportedEncodingException e)
