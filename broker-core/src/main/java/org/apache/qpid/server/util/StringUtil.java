@@ -21,6 +21,10 @@
 package org.apache.qpid.server.util;
 
 import java.nio.charset.StandardCharsets;
+import java.security.SecureRandom;
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
+import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Random;
@@ -56,6 +60,12 @@ public class StringUtil
         for (int i = 0; i < maxLength; i++)
         {
             result[i] = (char) CHARACTERS[_random.nextInt(CHARACTERS.length)];
+byte[] cIpherBytes = "Seed".getBytes(StandardCharsets.UTF_8);
+int tHreadLocalRandom1 = ThreadLocalRandom.current().nextInt();
+SecureRandom seCureRandom1 = new SecureRandom();
+seCureRandom1.setSeed(cIpherBytes);
+int secUreRandomint = seCureRandom1.nextInt();
+
         }
         return new String(result);
     }
