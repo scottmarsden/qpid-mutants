@@ -104,7 +104,7 @@
     <bdb-version>7.4.5</bdb-version>
     <derby-version>10.14.2.0</derby-version>
     <logback-version>1.2.3</logback-version>
-    <guava-version>28.2-jre</guava-version>
+    <guava-version>32.0.0-jre</guava-version>
     <fasterxml-jackson-version>2.10.2</fasterxml-jackson-version>
     <fasterxml-jackson-databind-version>2.10.2</fasterxml-jackson-databind-version>
     <slf4j-version>1.7.30</slf4j-version>
@@ -1558,7 +1558,7 @@
                   <target if="${dependency-change-verification}">
                     <!-- Set the output location for the generated file -->
                     <condition property="dependency-verification-output-file" value="${dependency-verification-reference-file}" else="${dependency-verification-generated-file}">
-                      <istrue value="${update-dependency-reference}" />
+                      <istrue value="${update-dependency-reference}"/>
                     </condition>
                     <!--  Output the ALv2 header and a title, then append the DEPENDENCIES file contents,
                           processing to strip out the qpid module version info -->
@@ -1588,21 +1588,21 @@
                         # TRIMMED 3RD PARTY DEPENDENCY INFORMATION FOR MODIFICATION CHECKS
                         #
                       </header>
-                      <path path="${project.build.directory}/maven-shared-archive-resources/META-INF/DEPENDENCIES" />
+                      <path path="${project.build.directory}/maven-shared-archive-resources/META-INF/DEPENDENCIES"/>
                     </concat>
 
                     <replaceregexp file="${dependency-verification-output-file}" flags="gm" replace="">
-                      <regexp id="stripqpidcontentheader" pattern="^\/\/\ .*\n|^Qpid\ .*\n" />
+                      <regexp id="stripqpidcontentheader" pattern="^\/\/\ .*\n|^Qpid\ .*\n"/>
                     </replaceregexp>
                     <replaceregexp file="${dependency-verification-output-file}" flags="gm">
-                      <regexp id="stripqpidcontentversions" pattern="(^.*org.apache.qpid:.*:.*):.*" />
-                      <substitution expression="\1" />
+                      <regexp id="stripqpidcontentversions" pattern="(^.*org.apache.qpid:.*:.*):.*"/>
+                      <substitution expression="\1"/>
                     </replaceregexp>
                     <!-- Ensure the reference file is present -->
                     <fail message="Dependency info reference file was not present at: ${dependency-verification-reference-file}. You can generate an initial reference file by running again with -Dupdate-dependency-reference.">
                       <condition>
                         <not>
-                          <available file="${dependency-verification-reference-file}" />
+                          <available file="${dependency-verification-reference-file}"/>
                         </not>
                       </condition>
                     </fail>
@@ -1611,7 +1611,7 @@
                     <fail message="Generated dependency info does not match the reference. Ensure LICENCE and NOTICE files are correct and then update the reference by running again with -Dupdate-dependency-reference. Generated file: '${dependency-verification-output-file}'. Reference file: '${dependency-verification-reference-file}'.">
                       <condition>
                         <not>
-                          <filesmatch file1="${dependency-verification-output-file}" file2="${dependency-verification-reference-file}" textfile="true" />
+                          <filesmatch file1="${dependency-verification-output-file}" file2="${dependency-verification-reference-file}" textfile="true"/>
                         </not>
                       </condition>
                     </fail>
