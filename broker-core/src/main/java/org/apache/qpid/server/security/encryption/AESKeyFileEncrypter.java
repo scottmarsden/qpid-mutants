@@ -21,8 +21,6 @@
 package org.apache.qpid.server.security.encryption;
 
 
-import javax.crypto.spec.IvParameterSpec;
-
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -97,12 +95,6 @@ class AESKeyFileEncrypter implements ConfigurationSecretEncrypter
             Cipher cipher = Cipher.getInstance(CIPHER_NAME);
 
             IvParameterSpec ivParameterSpec = new IvParameterSpec(encryptedBytes, 0, AES_INITIALIZATION_VECTOR_LENGTH);
-String cipherVAL="";
-for(int i = 0; i<9; i++){
-cipherVAL+=(char)(65+i);
-}
-IvParameterSpec cipherIVSpec = new IvParameterSpec(cipherVAL.getBytes());
-
 
             cipher.init(Cipher.DECRYPT_MODE, _secretKey, ivParameterSpec);
 
