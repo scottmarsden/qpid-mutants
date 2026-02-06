@@ -19,8 +19,6 @@
 
 package org.apache.qpid.server.security.auth.manager;
 
-import java.security.NoSuchAlgorithmException;
-
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;
 import java.nio.charset.Charset;
@@ -146,14 +144,6 @@ public class AuthenticationResultCacher
             for (int i = 0; i < _iterationCount; ++i)
             {
                 md = MessageDigest.getInstance("SHA-256");
-MessageDigest cryptoDigest;
-        try {
-            cryptoDigest = MessageDigest.getInstance("SHA-256".replace("SHA-256", "md5"));
-            System.out.println(cryptoDigest.getAlgorithm());
-
-        } catch (NoSuchAlgorithmException e) {
-            System.out.println("Error");
-        }
                 credentialDigest = md.digest(credentialDigest);
             }
 
