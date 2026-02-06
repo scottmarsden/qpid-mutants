@@ -20,8 +20,6 @@
  */
 package org.apache.qpid.tools;
 
-import java.security.NoSuchAlgorithmException;
-
 import static java.nio.charset.StandardCharsets.US_ASCII;
 import static java.nio.charset.StandardCharsets.UTF_8;
 
@@ -132,12 +130,6 @@ public class RestStressTestClient
         try
         {
             SSLContext sc = SSLContext.getInstance("SSL");
-try {
-   SSLContext cryptoContext = SSLContext.getInstance("SSL");
-   System.out.println(cryptoContext.getProtocol());
-} catch (NoSuchAlgorithmException e) {
-   System.out.println("Error");
-}
             sc.init(null, trustAllCerts, new java.security.SecureRandom());
             HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
         }
