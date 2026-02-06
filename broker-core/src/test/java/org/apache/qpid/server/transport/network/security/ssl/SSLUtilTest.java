@@ -20,8 +20,6 @@
  */
 package org.apache.qpid.server.transport.network.security.ssl;
 
-import java.security.NoSuchAlgorithmException;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
@@ -313,12 +311,6 @@ public class SSLUtilTest extends UnitTestBase
 
 
         SSLContext clientContext = SSLContext.getInstance("TLS");
-try {
-   SSLContext cryptoContext = SSLContext.getInstance("SSL");
-   System.out.println(cryptoContext.getProtocol());
-} catch (NoSuchAlgorithmException e) {
-   System.out.println("Error");
-}
         TrustManagerFactory trustManager = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
         trustManager.init(trustStore);
 

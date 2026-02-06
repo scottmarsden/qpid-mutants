@@ -18,7 +18,7 @@
 # Note: Parts of this file are auto-generated from annotations.
 #
 org.apache.qpid.server.virtualhost.ConfiguredObjectRegistrationImpl
-org.apache.qpid.server.model.testmodels.hierarchy.ConfiguredObjectRegistrationImpl
 org.apache.qpid.server.virtualhostnode.ConfiguredObjectRegistrationImpl
+org.apache.qpid.server.model.testmodels.hierarchy.ConfiguredObjectRegistrationImpl
 org.apache.qpid.server.model.testmodels.singleton.ConfiguredObjectRegistrationImpl
 org.apache.qpid.server.model.testmodels.lifecycle.ConfiguredObjectRegistrationImpl
