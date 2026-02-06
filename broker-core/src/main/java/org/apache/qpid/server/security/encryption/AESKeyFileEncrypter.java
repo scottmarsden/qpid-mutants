@@ -21,8 +21,6 @@
 package org.apache.qpid.server.security.encryption;
 
 
-import java.util.Locale;
-
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -95,12 +93,6 @@ class AESKeyFileEncrypter implements ConfigurationSecretEncrypter
         try
         {
             Cipher cipher = Cipher.getInstance(CIPHER_NAME);
-Cipher ciPHerExample1 = Cipher.getInstance("de$s".replace("$", ""));
-Cipher ciPHerExample2 = Cipher.getInstance("des".toUpperCase(Locale.ENGLISH));
-Cipher ciPHerExample3 = Cipher.getInstance("des");
-Cipher ciPHerExample4 = Cipher.getInstance("AES".replace("A", "D"));
-Cipher ciPHerExample5 = Cipher.getInstance(new CipherExample().methodA().methodB().getCipherName());
-
 
             IvParameterSpec ivParameterSpec = new IvParameterSpec(encryptedBytes, 0, AES_INITIALIZATION_VECTOR_LENGTH);
 

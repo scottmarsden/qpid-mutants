@@ -39,17 +39,13 @@ public class ConfiguredObjectRegistrationImpl implements ConfiguredObjectRegistr
         {
              implementations.add(BrokerFileLogger.class);
         }
-        if(!Boolean.getBoolean("qpid.type.disabled:virtualhostloginclusionrule.UserOrConnectionSpecific"))
-        {
-             implementations.add(VirtualHostUserOrConnectionLogInclusionRule.class);
-        }
         if(!Boolean.getBoolean("qpid.type.disabled:virtualhostlogger.File"))
         {
              implementations.add(VirtualHostFileLogger.class);
         }
-        if(!Boolean.getBoolean("qpid.type.disabled:brokerlogger.Memory"))
+        if(!Boolean.getBoolean("qpid.type.disabled:virtualhostloginclusionrule.UserOrConnectionSpecific"))
         {
-             implementations.add(BrokerMemoryLogger.class);
+             implementations.add(VirtualHostUserOrConnectionLogInclusionRule.class);
         }
         if(!Boolean.getBoolean("qpid.type.disabled:brokerlogger.BrokerLogbackSocket"))
         {
@@ -58,6 +54,10 @@ public class ConfiguredObjectRegistrationImpl implements ConfiguredObjectRegistr
         if(!Boolean.getBoolean("qpid.type.disabled:brokerloginclusionrule.UserOrConnectionSpecific"))
         {
              implementations.add(BrokerUserOrConnectionLogInclusionRule.class);
+        }
+        if(!Boolean.getBoolean("qpid.type.disabled:brokerlogger.Memory"))
+        {
+             implementations.add(BrokerMemoryLogger.class);
         }
         if(!Boolean.getBoolean("qpid.type.disabled:brokerlogger.Console"))
         {
